@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--<link rel="stylesheet" type="text/css" href="board">-->
+<!--<script src="boardJs"></script>-->
+<link rel="stylesheet" type="text/css" href="../index.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Kanit:ital,wght@1,300&display=swap" rel="stylesheet"> 
+
+<script src="https://kit.fontawesome.com/1d18fffde0.js" crossorigin="anonymous"></script>
+<script src="../func.js"></script> 
+<script src="../index.js"></script>
+<script src="index.js"></script>
+</head>
+<body>
+<div class="blur">
+
+	<div id="sub_image"></div>
+	<div id="name">
+		<div id="main_name">BLACKPINK</div>
+		<div id="quote">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in your area</div>
+	</div>
+</div>
+<i class="far fa-star menu_loader"></i>
+<div id="menu_container">
+	<div id="btn_container">
+		<div class="menu_btn"><a href="../index.html"><i class="fas fa-home"></i> &nbsp;&nbsp;Strona główna</a></div>
+		<div class="menu_btn"><a href="../blackpink/index.html"><i class="fas fa-book"></i> &nbsp;&nbsp;O zespole</a></div>
+		<div class="menu_btn"><a href="index.html"><i class="fas fa-female"></i> &nbsp;&nbsp;Członkinie zespołu</a></div>
+		<div class="menu_btn"><a href="../utwory/index.html"><i class="fas fa-compact-disc"></i> &nbsp;&nbsp;Utwory</a></div>
+	</div>
+</div>
+
+<div class="band_opt_container">
+	<div class="band_opt jisoo" data-singer_name="Kim Ji-soo" onclick="singer_data(jisoo)">
+		<div class="band_opt_background"></div>
+	</div>
+	<div class="band_opt lisa" data-singer_name="Lalisa Manoban" onclick="singer_data(lisa)">
+		<div class="band_opt_background reverse_background"></div>
+	</div>
+	<div class="band_opt rosie" data-singer_name="Roseanne Park" onclick="singer_data(rosie)">
+		<div class="band_opt_background"></div>
+	</div>
+	<div class="band_opt jennie" data-singer_name="Kim Jennie" onclick="singer_data(jennie)">
+		<div class="band_opt_background reverse_background"></div>
+	</div>
+</div>
+<div id="photo_max_container">
+	<img class="photo_max" src=""/>
+	<i class="fas fa-times-circle close_gallery"></i>
+	<i class="fas fa-arrow-alt-circle-left prev_photo"></i>
+	<i class="fas fa-arrow-alt-circle-right next_photo"></i>
+</div>
+<div id="band_singer_data_container">
+	<div class="left_col"></div>
+	<div class="right_col">
+		<div id="singer_name"></div>
+		<div id="birth_date"></div>
+		<div id="height"></div>
+		<div id="weight"></div>
+		<div id="zodiac"></div>
+		<div id="nationality"></div>
+		<div id="position"></div>
+		<div id="instagram"></div>
+	</div>
+	<div id="photogallery">
+		
+	</div>
+</div>
+</body>
+</html>

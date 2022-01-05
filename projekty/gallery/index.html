@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--<link rel="stylesheet" type="text/css" href="board">-->
+<!--<script src="boardJs"></script>-->
+<link rel="stylesheet" type="text/css" href="index.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Kanit:ital,wght@1,300&display=swap" rel="stylesheet"> 
+
+<script src="https://kit.fontawesome.com/1d18fffde0.js" crossorigin="anonymous"></script>
+<script src="func.js"></script> 
+<script src="index.js"></script>
+</head>
+<body>
+<input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" onchange="getFile(this)" multiple>
+<div id="gallery"></div>
+<div id="photo_max">
+	<div id="buttons_container">
+		<div class="filter_btn sepia" onclick = "add_filter('sepia')">SEPIA</div>
+		<div class="filter_btn blur" onclick = "add_filter('blur')">BLUR</div>
+		<div class="filter_btn brightness" onclick = "add_filter('brightness')">BRIGHTNESS</div>
+		<div class="filter_btn contrast" onclick = "add_filter('contrast')">CONTRAST</div>
+		<div class="filter_btn drop-shadow" onclick = "add_filter('drop-shadow')">DROP SHADOW</div>
+		<div class="filter_btn grayscale" onclick = "add_filter('grayscale')">GRAYSCALE</div>
+		<div class="filter_btn hue-rotate" onclick = "add_filter('hue-rotate')">HUE ROTATE</div>
+		<div class="filter_btn invert" onclick = "add_filter('invert')">INVERT</div>
+		<div class="filter_btn opacity" onclick = "add_filter('opacity')">OPACITY</div>
+		<div class="filter_bt saturate" onclick = "add_filter('saturate')">SATURATE</div>
+		<div class="filter_btn clear" onclick = "add_filter('clear')">NONE</div>
+		
+		<div id="filter_container">
+			<div id="min">0</div>
+			<div id="filter_level"></div>
+			<div id="max">100</div>
+		</div>
+	</div>
+	<div class="drop_btn">
+		<div class="hvb">
+			<span>H: <input type="number" id="horizontal" name="horizontal" min="-10" max="10" value="0" onchange="hvb()"></span>
+			<span>V: <input type="number" id="vertical" name="vertical" min="-10" max="10" value="0" onchange="hvb()"></span>
+			<span>B: <input type="number" id="blur" name="blur" min="0" max="10" value="0" onchange="hvb()"></span>
+		</div>
+		<div class="rgb">
+			<span>R: <input type="number" id="red" name="red" min="0" max="255" value="0" onchange="rgb()"></span>
+			<span>G: <input type="number" id="green" name="green" min="0" max="255" value="0" onchange="rgb()"></span>
+			<span>B: <input type="number" id="blue" name="blue" min="0" max="255" value="0" onchange="rgb()"></span>
+			<div id="rgb_color"></div>
+			<i class="fas fa-times close_drop"></i>
+		</div>
+	</div>
+	<div id="photo_g">
+		<i class="fas fa-chevron-left l_arrow"></i>
+		<i class="fas fa-chevron-right r_arrow"></i>
+		<i class="fas fa-times close"></i>
+	</div>
+</div>
+</body>
+</html>

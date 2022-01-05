@@ -1,0 +1,95 @@
+:root {
+	--ww: 0;
+	--leftStart: 0;
+	--topStart: 0;
+	--leftEnd: 0;
+	--topEnd: 0;
+	--rain_left: 0;
+	--rain_left_end;
+}
+a, a:link, a:hover, a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
+
+.bolt_1 {
+	clip-path: polygon(58% 0%, 57% 9%, 49% 19%, 46% 28%, 34% 38%, 45% 46%, 55% 54%, 50% 61%, 38% 68%, 31% 74%, 22% 81%, 25% 92%, 30% 97%, 35% 100%, 39% 100%, 34% 97%, 29% 92%, 26% 81%, 35% 74%, 42% 68%, 54% 61%, 58% 54%, 49% 46%, 38% 38%, 49% 28%, 56% 19%, 64% 9%, 70% 0%);
+}
+.bolt_2 {
+	clip-path: polygon(55% 59%, 63% 69%, 64% 79%, 84% 85%, 91% 89%, 96% 90%, 95% 88%, 88% 84%, 75% 80%, 70% 77%, 68% 69%, 61% 59%, 56% 56%);
+}
+.bolt_3 {	
+	clip-path: polygon(34% 38%, 28% 44%, 29% 50%, 25% 56%, 12% 62%, 13% 69%, 16% 63%, 28% 58%, 33% 50%, 33% 44%, 36% 39%);
+}
+.bolt_container {
+	position: absolute;
+	width: 100px;
+	height: 400px;
+	left: calc(50% - 50px);
+	top: 0;
+	margin: 0;
+	padding: 0;
+}
+.bolt_1, .bolt_2, .bolt_3 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.bg {
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	top: 0;
+	background: linear-gradient(to bottom, rgb(0,0,0) 0%, rgb(100,100,100) 100%);
+}
+#ground {
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 60vh;
+}
+.earth , .castle, .door {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+.earth {
+	background-color: rgb(6, 46, 15);
+	clip-path: polygon(0% 92%, 9% 91%, 11% 89%, 15% 87%, 17% 83%, 22% 81%, 26% 82%, 30% 84%, 37% 88%, 42% 90%, 45% 91%, 48% 89%, 52% 87%, 53% 83%, 56% 79%, 59% 79%, 62% 79%, 64% 80%, 66% 82%, 69% 83%, 72% 82%, 75% 80%, 77% 77%, 78% 74%, 82% 71%, 85% 70%, 89% 70%, 92% 70%, 95% 69%, 100% 69%, 100% 100%, 0% 100%);
+}
+.castle {
+	background: linear-gradient(to right, black 0%, gray 50%, black 100%);
+	clip-path: polygon(81% 71%, 81% 56%, 79% 56%, 79% 52%, 80% 49%, 81% 52%, 81% 54%, 83% 54%, 83% 52%, 84% 52%, 84% 54%, 85% 54%, 85% 52%, 86% 52%, 86% 54%, 87% 52%, 87% 47%, 86% 45%, 88% 40%, 90% 45%, 89% 47%, 89% 52%, 90% 52%, 90% 54%, 91% 54%, 91% 52%, 92% 52%, 92% 54%, 93% 54%, 93% 52%, 94% 52%, 94% 54%, 96% 54%, 96% 52%, 97% 49%, 98% 52%, 98% 56%, 96% 56%, 96% 70%);
+}
+.door {
+	background-color: rgb(97, 12, 16);
+	clip-path: polygon(86% 70%, 86% 65%, 87% 62%, 88% 61%, 89% 62%, 90% 65%, 90% 70%);
+}
+.drop {
+	width: 3px;
+	height: 5px;
+	background-color: rgba(43, 220, 255, 0.4);
+	position: absolute;
+	top: 0;
+}
+@keyframes raindrop {
+	0% {
+		left: var(--rain_left);
+		top: 0;
+	}
+	100% {
+		left: var(--rain_left_end);
+		top: 97vh;
+	}
+}

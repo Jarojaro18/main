@@ -1,0 +1,146 @@
+.menuContainer {
+	position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+	z-index: 900;
+}
+.squareContainer {
+	position: relative;
+    border-radius: 10px;
+    transform: rotateZ(45deg);
+    color: white;
+    font-size: 24px;
+}
+.menuBtn {
+	position: absolute;
+    transform: rotateZ(-45deg);
+    cursor: pointer;
+}
+.fa-book {
+    left: 20px;
+    bottom: 20px;
+}
+.fa-user {
+	right: 20px;
+    top: 20px;
+}
+.fa-home {
+	right: 20px;
+    bottom: 20px;
+}
+.fa-music {
+	left: 20px;
+    top: 20px;
+}
+.startBtn {
+	position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+	cursor: pointer;
+	color: rgba(255,255,255, 0.4);
+    z-index: 999;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 5px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+	background-color: black;
+}
+.startBtn:hover {
+	animation: start 0.6s forwards;
+}
+.startBtn i {
+	transform: rotateZ(0deg);
+}
+.titleBtn {
+	width: auto;
+    height: auto;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    display: none;
+    position: fixed;
+    top:10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+@keyframes start {
+	0% {
+    	box-shadow: inset 0px 0px 5px white;
+        text-shadow: 0px 0px 2px white;
+        color: rgba(255,255,255, 0.4);
+    }
+    12.5% {
+    	box-shadow: inset 0px 0px 5px white, 1px 1px 5px white;
+    }
+    25% {
+    	box-shadow: inset 0px 0px 5px white, 1px 1px 5px white, 1px 0px 5px white;
+    }
+    37.5% {
+    	box-shadow: inset 0px 0px 5px white, 1px 1px 5px white, 1px 0px 5px white, 1px -1px 5px white;
+    }
+    50% {
+    	box-shadow: inset 0px 0px 5px white, 1px 1px 5px white, 1px 0px 5px white, 1px -1px 5px white, 0px -1px 5px white;
+    }
+    62.5% {
+    	box-shadow: inset 0px 0px 5px white, 1px 1px 5px white, 1px 0px 5px white, 1px -1px 5px white, 0px -1px 5px white, -1px -1px 5px white;
+    }
+    75% {
+    	box-shadow: inset 0px 0px 5px white, 1px 1px 5px white, 1px 0px 5px white, 1px -1px 5px white, 0px -1px 5px white, -1px -1px 5px white, -1px 0px 5px white;
+    }
+    87.5% {
+    	box-shadow: inset 0px 0px 5px white, 1px 1px 5px white, 1px 0px 5px white, 1px -1px 5px white, 0px -1px 5px white, -1px -1px 5px white, -1px 0px 5px white, -1px 1px 5px white;
+    }
+    100% {
+    	box-shadow: inset 0px 0px 5px white, 1px 1px 5px white, 1px 0px 5px white, 1px -1px 5px white, 0px -1px 5px white, -1px -1px 5px white, -1px 0px 5px white, -1px 1px 5px white;
+        text-shadow: 0px 0px 10px white;
+        color: rgba(255,255,255, 1);
+    }
+}
+@keyframes menuAnimIn {
+	0% {
+    	box-shadow: var(--in);
+    }
+    100% {
+    	box-shadow: var(--out);
+    }
+}
+@keyframes filterIn {
+	0% {
+    	filter: blur(0px) brightness(100%);
+    }
+    100% {
+    	filter: blur(10px) brightness(30%);
+    }
+}
+@keyframes filterOut {
+	0% {
+    	filter: blur(10px) brightness(30%);
+    }
+    100% {
+    	filter: blur(0px) brightness(100%);
+    }
+}
+@keyframes menuAnimOut {
+	0% {
+    	box-shadow: var(--in);
+    }
+    100% {
+    	box-shadow: var(--out);
+    }
+}

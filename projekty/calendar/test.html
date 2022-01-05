@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--<link rel="stylesheet" type="text/css" href="board">-->
+<!--<script src="boardJs"></script>-->
+<link rel="stylesheet" href="test.css">
+<link rel="stylesheet" href="const_css.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+
+<script src="https://kit.fontawesome.com/1d18fffde0.js" crossorigin="anonymous"></script>
+<script src="func.js"></script> 
+<script src="test.js"></script>
+<script src="calendar.js"></script>
+
+</head>
+<body>
+	<div id="year_container">
+		<i class="fas fa-angle-left left_arrow_year"></i>
+		<div id="year"></div>
+		<i class="fas fa-angle-right right_arrow_year"></i>
+	</div>
+	<div id="month_container">
+		<i class="fas fa-angle-left left_arrow_month"></i>
+		<div id="month"></div>
+		<i class="fas fa-angle-right right_arrow_month"></i>
+	</div>
+	<div id="name_of_the_day_container">
+		<div class="name_of_the_day">Poniedziałek</div>
+		<div class="name_of_the_day">Wtorek</div>
+		<div class="name_of_the_day">Środa</div>
+		<div class="name_of_the_day">Czwartek</div>
+		<div class="name_of_the_day">Piątek</div>
+		<div class="name_of_the_day">Sobota</div>
+		<div class="name_of_the_day">Niedziela</div>
+	</div>
+	<div id="calendar_days_container">
+		
+	</div>
+	
+	<div id="day_data_container">
+		<div>
+			<div id="date"></div>
+			<div id="day_of_week"></div>
+		</div>
+		<div>
+			<div>Podaj czas trwania wydarzenia:</div>
+			<div><input type="number" id="hour1" min="0" max="23"> : <input type="number" id="min1" min="0" max="59"> - <input type="number" id="hour2" min="0" max="23"> : <input type="number" id="min2" min="0" max="59"></div>
+		</div>
+		<textarea id="event_description" rows="4" cols="50"></textarea>
+		<div id="make_cookie" onclick="set_cookie()">DODAJ</div>
+		<i class="fas fa-times-circle close_day"></i>
+	</div>
+	<div class="events_container">
+		<div class="actual_data">
+			<div class="actual_day"></div>
+			<div class="actual_month"></div>
+			<div class="actual_year"></div>
+		</div>
+		<div class="close_events flex_center">X</div>
+		<div class="events"></div>
+	</div>
+</body>
+</html>
+

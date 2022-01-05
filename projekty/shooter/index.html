@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--<link rel="stylesheet" type="text/css" href="board">-->
+<!--<script src="boardJs"></script>-->
+
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="index2.css">
+<link rel="stylesheet" type="text/css" href="ship.css">
+<link rel="stylesheet" type="text/css" href="enemy.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rock+3D&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet"> 
+
+<script src="https://kit.fontawesome.com/1d18fffde0.js" crossorigin="anonymous"></script>
+<script src="func.js"></script>
+<script src="index.js"></script>
+<script src="index_.js"></script>
+<script src="enemy.js"></script>
+<script src="ship.js"></script>
+<script src="achievements.js"></script>
+<script src="cookie.js"></script>
+
+
+</head>
+<body>
+	<div id="front">
+	<div id="title">ALIEN INVAZION</div>
+	<div id="buttons">
+		<div class="button"><span class="menu start" onclick="open_it('ship_choose')">START</span></div>
+		<div class="button"><span class="menu rules" onclick="open_it('rules_desc')">ZASADY GRY</span></div>
+		<div class="button"><span class="menu navigation" onclick="open_it('control_desc')">STEROWANIE</span></div>
+		<div class="button"><span class="menu achievements" onclick="open_it('achievements_desc'), unlocked_kills_achievements()">OSIĄGNIĘCIA</span></div>
+	</div>
+	<div id="alien_ship">
+		<div class="cockpit"></div>
+		<div class="light_circle"></div>
+		<div class="light_ray"></div>
+	</div>
+	<div class="ship_choose">
+		<i class="fas fa-times close" onclick="close_it('ship_choose')"></i>
+		<div class="ship_choice typhoon_container" onclick="new_game(typhoon)">
+			<div class="ship_container">
+				<div class="ship_layer2 typhoon_layer1"></div>
+				<div class="ship_layer2 typhoon_layer2"></div>
+				<div class="ship_layer2 typhoon_layer3"></div>
+			</div>
+			<div class="ship_statistics">
+				<div><i class="fas fa-heart"></i><span class="ship_stat">200</span></div>
+				<div><i class="fas fa-tachometer-alt"></i><span class="ship_stat">4</span></div>
+				<div><i class="fas fa-shield-alt"></i><span class="ship_stat">100</span></div>
+				<div><i class="fas fa-burn"></i><span class="ship_stat">40</span></div>
+			</div>
+		</div>
+		<div class="ship_choice thunder_container" onclick="new_game(thunder)">
+			<div class="ship_container">
+				<div class="ship_layer2 thunder_layer1"></div>
+				<div class="ship_layer2 thunder_layer2"></div>
+				<div class="ship_layer2 thunder_layer3"></div>
+				<div class="ship_layer2 thunder_layer4"></div>
+			</div>
+			<div class="ship_statistics">
+				<div><i class="fas fa-heart"></i><span class="ship_stat">250</span></div>
+				<div><i class="fas fa-tachometer-alt"></i><span class="ship_stat">3</span></div>
+				<div><i class="fas fa-shield-alt"></i><span class="ship_stat">100</span></div>
+				<div><i class="fas fa-burn"></i><span class="ship_stat">30</span></div>
+			</div>
+		</div>
+		<div class="ship_choice waterfall_container" onclick="new_game(waterfall)">
+			<div class="ship_container">
+				<div class="ship_layer2 waterfall_layer1"></div>
+				<div class="ship_layer2 waterfall_layer2"></div>
+				<div class="ship_layer2 waterfall_layer3"></div>
+			</div>
+			<div class="ship_statistics">
+				<div><i class="fas fa-heart"></i><span class="ship_stat">300</span></div>
+				<div><i class="fas fa-tachometer-alt"></i><span class="ship_stat">2</span></div>
+				<div><i class="fas fa-shield-alt"></i><span class="ship_stat">100</span></div>
+				<div><i class="fas fa-burn"></i><span class="ship_stat">20</span></div>
+			</div>
+		</div>
+	</div>
+	<div class="control_desc">
+		<i class="fas fa-times close" onclick="close_it('control_desc')"></i>
+		<div class="control_mouse">
+			<div>
+				<i class="fas fa-mouse"></i>
+			</div>
+			<div class="control_text">
+				<div>LEWY PRZYCISK MYSZKI - STRZELANIE</div>
+				<div>PORUSZANIE MYSZKĄ - KONTROLA KIERUNKU</div>
+			</div>
+		</div>
+		<div class="control_keyboard">
+			<div>
+				<i class="far fa-keyboard"></i>
+			</div>
+			<div class="control_text">
+				<div>PRZYCISK NA KLAWIATURZE W GÓRĘ - PRZYŚPIESZANIE</div>
+			</div>
+		</div>
+	</div>
+	<div class="rules_desc">
+		<i class="fas fa-times close" onclick="close_it('rules_desc')"></i>
+		<div class="rules_text">
+			Wybierz jeden z trzech statków i pokonaj wrogów.</br>
+			Im wyższy poziom tym większa ilość przeciników oraz ich żywotność. Po wyeliminowaniu wszystkich przeciwników z planszy dostajesz bonus do wyboru:
+			</br>-większa żywotność </br>-większa tarcza ochronna </br>-większe obrażenia.
+		</div>
+	</div>
+	<div class="achievements_desc">
+		<i class="fas fa-times close" onclick="close_it('achievements_desc')"></i>
+		<div id="kills_achievements">
+			<div class="kill_achievement">
+				<div class="achievement_background first_blood"></div>
+				<div class="achievement_title" title="Zniszcz pierwszego wroga.">PIERWSZA KREW</div>
+			</div>
+			<div class="kill_achievement">
+				<div class="achievement_background decimation"></div>
+				<div class="achievement_title" title="Zniszcz 10 wrogów w ciągu jednej rozgrywki.">DECYMACJA</div>
+			</div>
+			<div class="kill_achievement">
+				<div class="achievement_background alien_killer"></div>
+				<div class="achievement_title" title="Zniszcz 25 wrogów w ciągu jednej rozgrywki.">ALIEN KILLER</div>
+			</div>
+			<div class="kill_achievement">
+				<div class="achievement_background masakra"></div>
+				<div class="achievement_title" title="Zniszcz 50 wrogów w ciągu jednej rozgrywki.">MASAKRA</div>
+			</div>
+			<div class="kill_achievement">
+				<div class="achievement_background hecatomb"></div>
+				<div class="achievement_title" title="Zniszcz 100 wrogów w ciągu jednej rozgrywki.">HEKATOMBA</div>
+			</div>
+			<div class="kill_achievement">
+				<div class="achievement_background sparta"></div>
+				<div class="achievement_title" title="Zniszcz 300 wrogów w ciągu jednej rozgrywki.">THIS IS SPARTA?</div>
+			</div>
+			<div class="kill_achievement">
+				<div class="achievement_background planet"></div>
+				<div class="achievement_title" title="Zniszcz 500 wrogów w ciągu jednej rozgrywki.">NISZCZYCIEL PLANET</div>
+			</div>
+			<div class="kill_achievement">
+				<div class="achievement_background balance"></div>
+				<div class="achievement_title" title="Zniszcz 1000 wrogów w ciągu jednej rozgrywki.">NISZCZYCIEL WSZECHŚWIATA</div>
+			</div>
+		</div>
+		<div id="hp_achievements">
+			<div class="hp_achievement">
+				<div class="achievement_background oak"></div>
+				<div class="achievement_title" title="Miej 400HP lub więcej w czasie jednej rozgrywki.">SERCE DĘBU</div>
+			</div>
+			<div class="hp_achievement">
+				<div class="achievement_background mountain"></div>
+				<div class="achievement_title" title="Miej 500HP lub więcej w czasie jednej rozgrywki.">WYTRZYMAŁOŚĆ GÓRY</div>
+			</div>
+			<div class="hp_achievement">
+				<div class="achievement_background earth"></div>
+				<div class="achievement_title" title="Miej 600HP lub więcej w czasie jednej rozgrywki.">ŻYCIE PLANETY</div>
+			</div>
+			<div class="hp_achievement">
+				<div class="achievement_background galaxy"></div>
+				<div class="achievement_title" title="Miej 750HP lub więcej w czasie jednej rozgrywki.">GALAKTYCZNE ŻYCIE</div>
+			</div>
+			<div class="hp_achievement">
+				<div class="achievement_background hou"></div>
+				<div class="achievement_title" title="Miej 1000HP lub więcej w czasie jednej rozgrywki.">SERCE WSZECHŚWIATA</div>
+			</div>
+		</div>
+		<div id="heal_achievements">
+			<div class="heal_achievement">
+				<div class="achievement_background pills"></div>
+				<div class="achievement_title" title="Osiągnij 25% leczenia w jednej rozgrywce.">LECZENIE NOWICJUSZA</div>
+			</div>
+			<div class="heal_achievement">
+				<div class="achievement_background vaccine"></div>
+				<div class="achievement_title" title="Osiągnij 50% leczenia w jednej rozgrywce.">ZAAWANSOWANE LECZENIE</div>
+			</div>
+			<div class="heal_achievement">
+				<div class="achievement_background fast_healing"></div>
+				<div class="achievement_title" title="Osiągnij 75% leczenia w jednej rozgrywce.">SZYBKIE LECZENIE</div>
+			</div>
+			<div class="heal_achievement">
+				<div class="achievement_background saint"></div>
+				<div class="achievement_title" title="Osiągnij 100% leczenia w jednej rozgrywce.">ŚWIĘTE LECZENIE</div>
+			</div>
+			<div class="heal_achievement">
+				<div class="achievement_background divine"></div>
+				<div class="achievement_title" title="Osiągnij 200% leczenia w jednej rozgrywce.">BOSKIE LECZENIE</div>
+			</div>
+		</div>
+		<div id="damage_achievements">
+			<div class="damage_achievement">
+				<div class="achievement_background prehistoric"></div>
+				<div class="achievement_title" title="Osiągnij 50 zadawanych obrażeń w jednej rozgrywce.">KIJOWE OBRAŻENIA</div>
+			</div>
+			<div class="damage_achievement">
+				<div class="achievement_background knight"></div>
+				<div class="achievement_title" title="Osiągnij 75 zadawanych obrażeń w jednej rozgrywce.">TAKIE SE OBRAŻENIA</div>
+			</div>
+			<div class="damage_achievement">
+				<div class="achievement_background bomb"></div>
+				<div class="achievement_title" title="Osiągnij 100 zadawanych obrażeń w jednej rozgrywce.">OBRAŻENIA BOMBOWE</div>
+			</div>
+			<div class="damage_achievement">
+				<div class="achievement_background missile"></div>
+				<div class="achievement_title" title="Osiągnij 150 zadawanych obrażeń w jednej rozgrywce.">OBRAŻENIA RAKIETOWE</div>
+			</div>
+			<div class="damage_achievement">
+				<div class="achievement_background nuclear"></div>
+				<div class="achievement_title" title="Osiągnij 200 zadawanych obrażeń w jednej rozgrywce.">OBRAŻENIA NUKLEARNE</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div id="gameboard">
+		<div id="ship_points">
+		   <div id="hp">
+			<i class="fas fa-heart"></i><span class="hp_data"><span class="actual_hp"></span>/<span class="max_hp"></span></span>
+		   </div>
+		   <div id="shield">
+			<i class="fas fa-shield-alt"></i><span class="shield_data"></span>
+		   </div>
+		   <div id="damage">
+			<i class="fas fa-fire"></i><span class="damage_data"></span>
+		   </div>
+		   <div id="healing">
+			<i class="fas fa-plus-square"></i><span class="heal_data"></span>
+		   </div>
+	   </div>
+	   <div id="bonuses">
+			<div class="add_health add_stat" onclick="add_bonus('hp')"> +20 HP</div>
+			<div class="add_damage add_stat" onclick="add_bonus('damage')"> +5 DMG</div>
+			<div class="add_healing add_stat" onclick="add_bonus('heal')"> +5% HEALING</div>
+	   </div>
+	</div>
+	<div id="res"></div>
+</body>
+</html>

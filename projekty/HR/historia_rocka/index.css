@@ -1,0 +1,32 @@
+
+#historyTitle {
+	text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+	padding-top: 100px;
+}
+#years {
+	text-align: center;
+    margin-bottom: 20px;
+}
+.yearBtn {
+	display: inline-block;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+.yearBtn:hover {
+	font-weight: bold;
+    text-decoration: underline;
+}
+.yearInfo {
+	font-size: 16px;
+    padding: 0px 10px;
+    display: none;
+}
+#fifties {
+	display: block;
+}
+.tab {
+	width: 30px;
+    display: inline-block;
+}

@@ -1,0 +1,106 @@
+.course_title, .course_price, .course_length {
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+.course_describe, .course_desc, .course_program {
+	color: var(--violet);
+	display: block;
+	text-align: center;
+	width: 90%;
+}
+.close_course {
+	position: fixed;
+	right: 30px;
+	top: 10px;
+	font-size: calc(22px + 0.2vw);
+	text-shadow: 0px 0px 2px var(--violet), 1px 1px 2px var(--violet), -1px -1px 2px var(--violet);
+	cursor: pointer;
+	color: white;
+}
+.course_title {
+	font-size: calc(26px + 0.2vw);
+	font-family: 'Cinzel', serif;
+	margin-bottom: 10px;
+}
+.course_price, .course_describe, .course_describe {
+	font-size: calc(22px + 0.2vw);
+	font-family: 'Cinzel', serif;
+	margin-bottom: 10px;
+	text-decoration: underline;
+}
+.course_length {
+	font-size: calc(18px + 0.2vw);
+	margin-bottom: 40px;
+}
+.course_describe {
+	
+}
+.course_desc {
+	margin-bottom: 40px;
+
+}
+.course_background {
+	padding: 20px 10px;
+	color: white;
+	text-shadow: 0px 0px 2px var(--violet), 1px 1px 2px var(--violet), -1px -1px 2px var(--violet);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../images/training/training1.jpg);
+	width: 100%;
+}
+.technics {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 250px;
+	height: 150px;
+	margin: 5px 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: calc(14px + 0.2vw);
+	text-shadow: 0px 0px 2px var(--violet), 1px 1px 2px var(--violet), -1px -1px 2px var(--violet);
+	color: white;
+	border-radius: 10px;
+	
+}
+.technics_images {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.technic1 {
+	background-image: url(../images/courses/course_technics/brwi_ombre.jpg);
+}
+.technic2 {
+	background-image: url(../images/courses/course_technics/microblading.jpg);
+}
+.technic3 {
+	background-image: url(../images/courses/course_technics/usta_ombre.jpg);
+}
+.technic4 {
+	background-image: url(../images/courses/course_technics/wypelnienie.jpg);
+}
+.technic5 {
+	background-image: url(../images/courses/course_technics/eyeliner.jpg);
+}
+.technic6 {
+	background-image: url(../images/courses/course_technics/cieniowana.jpg);
+}
+.technic7 {
+	background-image: url(../images/courses/course_technics/brodawka.jpg);
+}
+.technic8 {
+	background-image: url(../images/courses/course_technics/instabrows.jpg);
+}
+.technic9 {
+	background-image: url(../images/courses/course_technics/micropigment.jpg);
+}
+.technic10 {
+	background-image: url(../images/courses/course_technics/scar.jpg);
+}
+.underline {
+	text-decoration: underline;
+}

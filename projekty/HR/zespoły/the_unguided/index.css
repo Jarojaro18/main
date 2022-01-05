@@ -1,0 +1,76 @@
+.band_logo {
+	width: 100%;
+	height: auto;
+	max-height: 70vh;
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
+.band_logo img {
+	width: 80%;
+	height: auto;
+}
+.band_description {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.description, .band_members, .discography {
+	margin-top: 40px;
+	width: 90%;
+	text-align: center;
+}
+.band_page {
+	margin: 20px 0px;
+	font-weight: bold;
+}
+.band_page a {
+	font-size: 32px;
+	color: red;
+}
+.members, .discs{
+	margin: 5px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.member {
+	width: 200px;
+	height: auto;
+	max-width: 45%;
+	display: inline-block;
+	margin: 0px 5px;
+}
+.disc {
+	width: 300px;
+	height: auto;
+	max-width: 45%;
+	display: inline-block;
+	margin: 10px 10px;
+}
+.disc:not(.not_active){
+	cursor: pointer;
+}
+.disc:hover {
+	box-shadow: 6px 6px 8px red;
+}
+.disc img {
+	width: auto;
+	height: 300px;
+	max-height: 300px;
+	max-width: 100%;
+}
+.member img {
+	width: auto;
+	height: 200px;
+	max-height: 200px;
+	max-width: 100%;
+}
+.member_name, .disc_name {
+	font-size: 24px;
+	text-shadow: -1px -1px 2px red;
+}
+.mgtop20 {
+	margin-top: 20px;
+}

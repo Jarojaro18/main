@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="func.js"></script>
+	<script src="index.js"></script>
+	<script src="prototype_background.js"></script>
+	
+	<link href="index.css" rel="stylesheet">
+	<link href="submit.css" rel="stylesheet">
+	<link href="prototype_background.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="box box_1"></div>
+	<div class="box box_2"></div>
+	<div class="box box_3"></div>
+	<div class="box box_4"></div>
+	<div class="box box_5"></div>
+	<div id="main_page">
+	<div id="game_name">LOUPE QUIZ</div>
+	<div id="start_container">
+		<div>Wybierz kategorie:</div>
+		<div>
+			<select id="type">
+				<option value="town">Miasto</option>
+				<option value="movie">Film</option>
+				<option value="game">Gry komputerowe</option>
+			</select>
+		</div>
+		<div id="start" onclick="start_game()">Graj</div>
+	</div>
+	</div>
+	<div id="game">
+		<div id="loupe">
+			<div id="loupe_bg"></div>
+		</div>
+		<div id="ans_cont">
+			<div class="ans"></div>
+			<div class="ans"></div>
+			<div class="ans"></div>
+		</div>
+		<div id="pts">ILOŚĆ PKT: <span id="point"></span>/10</div>
+	</div>
+</body>
+
+</html>

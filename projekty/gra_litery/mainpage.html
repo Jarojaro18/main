@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--<link rel="stylesheet" type="text/css" href="board">-->
+<!--<script src="boardJs"></script>-->
+
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="game.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">  
+
+<script src="https://kit.fontawesome.com/1d18fffde0.js" crossorigin="anonymous"></script> 
+<script src="func.js"></script>
+<script src="cookie.js"></script>
+<script src="game.js"></script>
+</head>
+<body>
+	<div class="blurred">
+		<div id="title">GRA SŁÓW</div>
+		<div class="subTitle"><span onclick="show_gameboard()">START</span></div>
+		<div class="subTitle highscoreBtn">Tablica wyników</div>
+	</div>
+	<div id="highscoreBoardContainer" class="flexCC">
+		<i class="fas fa-times"></i>
+		<div>TABLICA WYNIKÓW: </div>
+		<div id="highscoreBoard"></div>
+	</div>
+	<div id="gameboard">
+		<div id="scoreBoard" class="txt_c">Liczba punktów: <span class="score"></span></div>
+		<div id="categoryTitle" class="txt_c"></div>
+		<div id="quoteContainer">
+		
+		</div>
+		<div id="letterContainer" class="flexCC">
+			<div id="vowel">
+				<div class="title">WYBIERZ LITERĘ:</div>
+				<span class="letterBtn vowel">A</span>
+				<span class="letterBtn consonant">B</span>
+				<span class="letterBtn consonant">C</span>
+				<span class="letterBtn consonant">D</span>
+				<span class="letterBtn vowel">E</span>
+				<span class="letterBtn consonant">F</span>
+				<span class="letterBtn consonant">G</span>
+				<span class="letterBtn consonant">H</span>
+				<span class="letterBtn vowel">I</span>
+				<span class="letterBtn consonant">J</span>
+				<span class="letterBtn consonant">K</span>
+				<span class="letterBtn consonant">L</span>
+				<span class="letterBtn consonant">M</span>
+				<span class="letterBtn consonant">N</span>
+				<span class="letterBtn vowel">O</span>
+				<span class="letterBtn consonant">P</span>
+				<span class="letterBtn consonant">R</span>
+				<span class="letterBtn consonant">S</span>
+				<span class="letterBtn consonant">T</span>
+				<span class="letterBtn vowel">U</span>
+				<span class="letterBtn consonant">V</span>
+				<span class="letterBtn consonant">W</span>
+				<span class="letterBtn consonant">X</span>
+				<span class="letterBtn vowel">Y</span>
+				<span class="letterBtn consonant">Z</span>
+			</div>
+		</div>
+		<div id="answerContainer" class="flexCC">
+			<textarea id="answer" name="answer" rows="4" cols="120" class="flexCC"></textarea><div id="answerBtn">SPRAWDŹ</div>
+		</div>
+		<i class="fas fa-question-circle info"></i>
+		<div id="help" class="flexCC">
+			<div>ZASADY GRY</div>
+			<div>Zgadnij hasło wybierając poszczególne litery.</div>
+			<div>Samogłoski odbierają 500pkt z twojej puli, spółgłoski odbierają 150pkt.</div>
+			<div>Jeśli ilość punktów spadnie poniżej 0 - przegrywasz.</div>
+			<div>Za zgadnięte hasło otrzymujesz 2500pkt, za nieprawidłową odpowiedź tracisz 100pkt.</div>
+			<div>Dane zapisują się w pamięci podręcznej przeglądarki. Wyczyszczenie pamięci podręcznej spowoduje usunięcie wyników.</div>
+			<i class="fas fa-times-circle exit"></i>
+		</div>
+		<div id="level">Poziom: <span id="levelCount"></span>/5</div>
+	</div>
+</body>
+</html>

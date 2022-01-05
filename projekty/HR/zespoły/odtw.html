@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+
+<link href="odtw.css" rel="stylesheet">
+
+<script src="../func.js"></script>
+<script src="songs.js"></script>
+</head>
+<body>
+	<div class="player_container">
+        <div class="song_lyrics"></div>
+        <div class="playlist">
+		
+		</div>
+	    <div class="s_p_container">
+            <div class="player_btn_container">
+                <div class="player_btn">
+                    <i class="fas fa-step-backward prev_song" title="Poprzedni utwór" onclick="prev_song()"></i>
+                    <i class="fas fa-backward backward" title="Przewiń o 10 sek w tył" onclick="song_minus_ten()"></i>
+                    <i class="fas fa-play play" title="Włącz odtwarzanie" onclick="play_song()"></i>
+                    <i class="fas fa-pause pause" title="Zatrzymaj odtwarzanie" onclick="pause_song()"></i>
+                    <i class="fas fa-forward forward" title="Przewiń o 10 sek w przód" onclick="song_plus_ten()"></i>
+                    <i class="fas fa-step-forward next_song" title="Następny utwór" onclick="next_song()"></i>
+                    <i class="fas fa-times close_player" title="Wyłącz odtwarzacz"></i>
+                </div>
+                <audio id="player_audio" src="">
+                </audio>
+            </div>
+	        <div class="song_name_container">
+                <i class="fas fa-music"></i>
+                <span class="song_name">Phoenix Down</span>
+                <i class="fas fa-music"></i>
+            </div>
+	    </div>
+	    <div class="current_time">
+			<span class="cr_min">0</span>:<span class="cr_tenth_sec">0</span><span class="cr_sec">0</span>
+		</div>
+		<div class="song_length">
+			<div class="start">0:00</div>
+			<div class="song_timeline">
+			</div>
+			<div class="stop"><span class="min">0</span>:<span class="tenth_sec">0</span><span class="sec">0</span></div>
+		</div>
+	</div>
+	<div class="songs_container">
+		<div>hellfrost <i class="far fa-play-circle" onclick="load_song(hellfrost)"></i></div>
+	</div>
+</body>
+</html>

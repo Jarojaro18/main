@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--<link rel="stylesheet" type="text/css" href="board">-->
+<!--<script src="boardJs"></script>-->
+<link rel="stylesheet" type="text/css" href="../index.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Kanit:ital,wght@1,300&display=swap" rel="stylesheet"> 
+
+<script src="https://kit.fontawesome.com/1d18fffde0.js" crossorigin="anonymous"></script>
+<script src="../func.js"></script> 
+<script src="../index.js"></script>
+<script src="index.js"></script>
+</head>
+<body>
+<div class="blur">
+	<div id="sub_image"></div>
+	<div id="name">
+		<div id="main_name">BLACKPINK</div>
+		<div id="quote">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in your area</div>
+	</div>
+</div>
+<i class="far fa-star menu_loader"></i>
+<div id="menu_container">
+	<div id="btn_container">
+		<div class="menu_btn"><a href="../index.html"><i class="fas fa-home"></i> &nbsp;&nbsp;Strona główna</a></div>
+		<div class="menu_btn"><a href="../blackpink/index.html"><i class="fas fa-book"></i> &nbsp;&nbsp;O zespole</a></div>
+		<div class="menu_btn"><a href="../członkinie_zespołu/index.html"><i class="fas fa-female"></i> &nbsp;&nbsp;Członkinie zespołu</a></div>
+		<div class="menu_btn"><a href="index.html"><i class="fas fa-compact-disc"></i> &nbsp;&nbsp;Utwory</a></div>
+	</div>
+</div>
+
+<div class="song_container">
+	<div class="song" onclick="load_song_data(boombayah)">
+		<div><img src="images/boombayah.jpg"/></div>
+		<div class="song_name">Boombayah</div>
+	</div>
+	<div class="song" onclick="load_song_data(whistle)">
+		<div><img src="images/whistle.jpg"/></div>
+		<div class="song_name">Whistle</div>
+	</div>
+	<div class="song" onclick="load_song_data(playing)">
+		<div><img src="images/playing.jpg"/></div>
+		<div class="song_name">Playing with Fire</div>
+	</div>
+	<div class="song" onclick="load_song_data(stay)">
+		<div><img src="images/stay.jpg"/></div>
+		<div class="song_name">Stay</div>
+	</div>
+	<div class="song" onclick="load_song_data(as_if)">
+		<div><img src="images/as_if.jpg"/></div>
+		<div class="song_name">As if it's your last</div>
+	</div>
+	<div class="song" onclick="load_song_data(ddu)">
+		<div><img src="images/ddu.jpg"/></div>
+		<div class="song_name">Ddu-Du Ddu-Du</div>
+	</div>
+	<div class="song" onclick="load_song_data(kiss)">
+		<div><img src="images/makeup.jpg"/></div>
+		<div class="song_name">Kiss nad Make Up</div>
+	</div>
+	<div class="song" onclick="load_song_data(fy)">
+		<div><img src="images/fy.jpg"/></div>
+		<div class="song_name">Forever Young</div>
+	</div>
+	<div class="song" onclick="load_song_data(really)">
+		<div><img src="images/really.jpg"/></div>
+		<div class="song_name">Really</div>
+	</div>
+	<div class="song" onclick="load_song_data(sul)">
+		<div><img src="images/sul.jpg"/></div>
+		<div class="song_name">See U Later</div>
+	</div>
+	<div class="song" onclick="load_song_data(ktl)">
+		<div><img src="images/ktl.jpg"/></div>
+		<div class="song_name">Kill this Love</div>
+	</div>
+	<div class="song" onclick="load_song_data(dont_know)">
+		<div><img src="images/dont_know.jpg"/></div>
+		<div class="song_name">Dont' Know What To Do</div>
+	</div>
+	<div class="song" onclick="load_song_data(kick)">
+		<div><img src="images/kick.jpg"/></div>
+		<div class="song_name">Kick It</div>
+	</div>
+	<div class="song" onclick="load_song_data(hope)">
+		<div><img src="images/hope.jpg"/></div>
+		<div class="song_name">Hope Not</div>
+	</div>
+	<div class="song" onclick="load_song_data(how_you)">
+		<div><img src="images/how_you.jpg"/></div>
+		<div class="song_name">How you like that</div>
+	</div>
+	<div class="song" onclick="load_song_data(ice)">
+		<div><img src="images/ice.jpg"/></div>
+		<div class="song_name">Ice Cream</div>
+	</div>
+	<div class="song" onclick="load_song_data(lovesick)">
+		<div><img src="images/lovesick.jpg"/></div>
+		<div class="song_name">Lovesick Girls</div>
+	</div>
+	<div class="song" onclick="load_song_data(sour)">
+		<div><img src="images/sour.jpg"/></div>
+		<div class="song_name">Sour Candy</div>
+	</div>
+	<div class="song" onclick="load_song_data(savage)">
+		<div><img src="images/savage.jpg"/></div>
+		<div class="song_name">Pretty Savage</div>
+	</div>
+	<div class="song" onclick="load_song_data(bet)">
+		<div><img src="images/bet.jpg"/></div>
+		<div class="song_name">Bet You Wanna</div>
+	</div>
+	<div class="song" onclick="load_song_data(crazy)">
+		<div><img src="images/crazy.jpg"/></div>
+		<div class="song_name">Crazy Over You</div>
+	</div>
+	<div class="song" onclick="load_song_data(lovetohate)">
+		<div><img src="images/lovetohate.jpg"/></div>
+		<div class="song_name">Love To Hate Me</div>
+	</div>
+	<div class="song" onclick="load_song_data(ynk)">
+		<div><img src="images/ynk.jpg"/></div>
+		<div class="song_name">You Never Know</div>
+	</div>
+</div>
+<div id="song_data_container">
+	<div id="close_container">
+		<cl><i class="fas fa-chevron-left"></i></cl>
+		<cl><i class="fas fa-times"></i></cl>
+		<cl><i class="fas fa-chevron-right"></i></cl>
+	</div>
+	<div id="song_name"></div>
+	<div id="song_video">
+		<iframe src='' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen class='vd'></iframe>
+	</div>
+	<div id="song_lyrics"></div>
+</div>
+</body>
+</html>

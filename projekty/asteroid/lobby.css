@@ -1,0 +1,88 @@
+body {
+	padding: 0;
+	margin: 0;
+	background-color: black;
+}
+a, a:active, a:link, a:hover, a:visited {
+	color: inherit;
+	text-decoration: inherit;
+}
+.main_title, .start, .scores {
+	font-family: 'Stick No Bills', sans-serif;
+	color: rgba(182, 199, 30, 0.8);
+	text-shadow: 1px 1px 1px red;
+	text-align: center;
+	padding: 50px 20px;
+}
+.main_title {
+	font-size: calc(32px + 2vw);
+	text-decoration: underline;
+}
+.start, .scores {
+	font-size: calc(24px + 1vw);
+	cursor: pointer;
+}
+.start span:hover, .scores span:hover {
+	text-decoration: underline;
+}
+
+#gameboard_container {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 10000;
+	display: none;
+}
+
+.star {
+	min-width: 2px;
+	min-height: 2px;
+	height: 0.2vw;
+	width: 0.2vw;
+	background-color: rgb(155, 209, 207);
+	position: absolute;
+	border-radius: 50%;
+	box-shadow: 0px 0px 10px rgb(155, 209, 207);
+}
+
+#highscoreBoard {
+	width: 80vw;
+	height: 80vh;
+	display: none;
+	position: absolute;
+	left: calc(50% - 40vw);
+	top: calc(50% - 40vh);
+	background-color: black;
+	border-radius: 20px;
+	border: solid rgb(182, 199, 30);
+	z-index: 10;
+	color: rgba(182, 199, 30, 0.8);
+	text-shadow: 1px 1px 1px red;
+}
+#highscoreBoard .fas {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-size: 24px;
+	cursor: pointer;
+	z-index: 20;
+}
+#score_board div {
+	width: 100%;
+	text-align: center;
+	font-family: 'Stick No Bills', sans-serif;
+	padding: 10px 0px;
+	color: rgba(182, 199, 30, 0.8);
+	text-shadow: 1px 1px 1px red;
+	font-size: calc(16px + 0.5vw);
+}
+#score_board {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 20px;
+}

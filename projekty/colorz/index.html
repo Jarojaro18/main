@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--<link rel="stylesheet" type="text/css" href="board">-->
+<!--<script src="boardJs"></script>-->
+<link rel="stylesheet" type="text/css" href="index.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/1d18fffde0.js" crossorigin="anonymous"></script>
+<script src="func.js"></script> 
+<script src="index.js"></script>
+</head>
+<body>
+<div class="color_viewer_container">
+	<div id="color_viewer"></div>
+</div>
+
+<div id="rgb_container">
+	<div class="color">
+		<div class="color_level">0 <div id="red_level" class="color_level_line" data-color="red"></div> 255</div>
+		<div class="color_level">RED: <span class="red_level_num">0</span></div>
+	</div>
+	<div class="color">
+		<div class="color_level">0 <div id="green_level" class="color_level_line" data-color="green"></div> 255</div>
+		<div class="color_level">GREEN: <span class="green_level_num">0</span></div>
+	</div>
+	<div class="color">
+		<div class="color_level">0 <div id="blue_level" class="color_level_line" data-color="blue"></div> 255</div>
+		<div class="color_level">BLUE: <span class="blue_level_num">0</span></div>
+	</div>
+</div>
+<div class="color_type_num">
+	<div class="color_type">
+		<div class="type_name rgb_type">RGB</div>
+		<div class="type_num rgb_num"></div>
+	</div>
+	<div class="color_type">
+		<div class="type_name hex_type">HEX</div>
+		<div class="type_num hex_num"></div>
+	</div>
+	<div class="color_type">
+		<div class="type_name cmyk_type">CMYK</div>
+		<div class="type_num cmyk_num"></div>
+	</div>
+	<div class="color_type">
+		<div class="type_name hsl_type">HSL</div>
+		<div class="type_num hsl_num"></div>
+	</div>
+</div>
+<div id="res"></div>
+</body>
+</html>

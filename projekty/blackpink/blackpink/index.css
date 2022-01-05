@@ -1,0 +1,21 @@
+#about {
+	padding: 25vh 20px 0px 20px;
+	font-family: 'Teko', sans-serif;
+	color: white;
+	text-shadow: 2px 2px 3px var(--pink);
+	text-align: center;
+	font-size: calc(16px + 0.5vw);
+}
+#about img {
+	max-width: 50vw;
+	max-height: 25vh;
+	width: auto;
+	height: auto;
+}
+imp {
+	color: var(--pink);
+	text-shadow: 2px 2px 3px black;
+}
+.early_time, .part {
+	margin-top: 50px;
+}

@@ -1,0 +1,9 @@
+.flex_center {
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
+.mp_0 {
+	margin: 0;
+	padding: 0;
+}

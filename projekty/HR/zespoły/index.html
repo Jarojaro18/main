@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+<link href="../index.css" rel="stylesheet">
+<link href="../menu.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+
+
+<script src="../func.js"></script>
+<script src="../menu.js"></script>
+<script src="index.js"></script>
+</head>
+<body>
+<div class="startBtn"><i class="fas fa-bolt"></i></div>
+<div class="titleBtn">
+
+</div>
+<div class="menuContainer">
+  <div class="squareContainer">
+    <a href="../historia_rocka/index.html"><i class="fas fa-book menuBtn" data-direction="left" data-title="Historia rocka"></i></a>
+    <a href="index.html"<i class="fas fa-user menuBtn" data-direction="right" data-title="Zespoły"></i></a>
+    <a href="../index.html"><i class="fas fa-home menuBtn" data-direction="bottom" data-title="Strona główna"></i></a>
+    <i class="fas fa-music menuBtn" data-direction="top" data-title="Piosenki"></i>
+  </div>
+</div>
+
+<div id="bandDesc" class="blur">
+	<div class="description">Wyszukaj swój ulubiony zespół rockowy - wybierając literę, lata działaności lub wpisując nazwę.
+	</div>
+	<div id="optionContainer">
+    	<div id="signs" class="optDiv">
+        	<div class="bandOpt sign">A</div>
+            <div class="bandOpt sign">B</div>
+            <div class="bandOpt sign">C</div>
+            <div class="bandOpt sign">D</div>
+            <div class="bandOpt sign">E</div>
+            <div class="bandOpt sign">F</div>
+            <div class="bandOpt sign">G</div>
+            <div class="bandOpt sign">H</div>
+            <div class="bandOpt sign">I</div>
+            <div class="bandOpt sign">J</div>
+            <div class="bandOpt sign">K</div>
+            <div class="bandOpt sign">L</div>
+            <div class="bandOpt sign">M</div>
+            <div class="bandOpt sign">N</div>
+            <div class="bandOpt sign">O</div>
+            <div class="bandOpt sign">P</div>
+            <div class="bandOpt sign">Q</div>
+            <div class="bandOpt sign">R</div>
+            <div class="bandOpt sign">S</div>
+            <div class="bandOpt sign">T</div>
+            <div class="bandOpt sign">U</div>
+            <div class="bandOpt sign">V</div>
+            <div class="bandOpt sign">W</div>
+            <div class="bandOpt sign">X</div>
+            <div class="bandOpt sign">Y</div>
+            <div class="bandOpt sign">Z</div>
+            <div class="bandOpt sign">0-9</div>
+        </div>
+        <div id="years" class="optDiv">
+        	<div class="bandOpt years">70s</div>
+            <div class="bandOpt years">80s</div>
+            <div class="bandOpt years">90s</div>
+            <div class="bandOpt years">00s</div>
+            <div class="bandOpt years">10s</div>
+        </div>
+        <div id="all" class="optDiv">
+        	<span class="bandOpt all">Pokaż wszystko</span>
+        </div>
+        <div id="songTitle" class="optDiv">
+        	<input type="text" class="bandTitle" onkeyup="findSong()">
+        </div>
+   	</div>
+    <div id="bands">
+    	<a href="the_unguided/index.html"><div class="bandSign" data-title="The Unguided" data-background="../images/the_unguided.jpg" data-years="00s 10s" data-letter="T">
+        </div></a>
+        <div class="bandSign not_active" data-title="Linkin Park" data-background="../images/linkin_park.jpg" data-years="90s 00s 10s" data-letter="L">
+        </div>
+        <div class="bandSign not_active" data-title="Volbeat" data-background="../images/volbeat.jpg" data-years="00s 10s" data-letter="V">
+        </div>
+        <div class="bandSign not_active" data-title="Dead by April" data-background="../images/dead_by_april.jpeg" data-years="00s 10s" data-letter="D">
+        </div>
+        <div class="bandSign not_active" data-title="Hollywood Undead" data-background="../images/hollywood_undead.jpg" data-years="00s 10s" data-letter="H">
+        </div>
+    </div>
+	
+</div>
+
+</body>
+</html>

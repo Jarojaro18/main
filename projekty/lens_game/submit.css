@@ -1,0 +1,46 @@
+
+#game {
+	width: 100%;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+#game_name {
+	width: 100%;
+	height: 30vh;
+	font-size: calc(24px + 2vw);
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#start_container {
+	width: 100%;
+	height: 60vh;
+	font-size: calc(16px + 2vw);
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+#start_container div {
+	width: 100%;
+	text-align: center;
+}
+#start {
+	cursor: pointer;
+}
+#start:hover {
+	text-decoration: underline;
+}
+
+#type {
+	font-size: 24px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--<link rel="stylesheet" type="text/css" href="board">-->
+<!--<script src="boardJs"></script>-->
+<link rel="stylesheet" href="lobby.css">
+<link rel="stylesheet" href="const_css.css">
+<link rel="stylesheet" href="test.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@600&display=swap" rel="stylesheet"> 
+
+<script src="https://kit.fontawesome.com/1d18fffde0.js" crossorigin="anonymous"></script>
+<script src="func.js"></script> 
+<script src="lobby.js"></script>
+<script src="cookie.js"></script>
+<script src="test.js"></script>
+<script src="enemy.js"></script>
+</head>
+<body>
+	<div id="main">
+	<div class="main_title">Cosmic Invaders</div>
+	<div class="start"><span onclick="show_gameboard()">Rozpocznij grę</span></div>
+	<div class="scores"><span>Tablica wyników</span></div>
+	<div id="highscoreBoard">
+		<i class="fas fa-times"></i>
+		<div id="score_board">
+		
+		</div>
+	</div>
+	</div>
+	<div id="gameboard_container" class="mp_0">
+		<div id="game_board" class="mp_0">
+			<div id="ship">
+				<div id="cockpit"></div>
+				<div class="gun"></div>
+			</div>
+			<div id="enemyContainer">
+				
+			</div>
+		</div>
+		
+		<div id="scoreboard_container" class="flex_center">
+			<div id="scoreboard" class="flex_center">
+				<div class="lvl"></div>
+				<div class="points"></div>
+				<div class="lives"></div>
+			</div>
+		</div>
+		</div>
+</body>
+</html>

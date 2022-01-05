@@ -1,0 +1,118 @@
+
+:root {
+    --imgWidth;
+    --imgHeight;
+}
+#imgContainer {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    padding:0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1100;
+	background-color: var(--violet);
+}
+
+#imgContent {
+    padding: 0;
+    margin: 0;
+    position: relative;
+	max-width: 75%;
+	max-height: 75%;
+    white-space: nowrap;
+}
+
+.tile {
+    margin: 0;
+    padding: 0;
+    width: var(--tw);
+    height: var(--th);
+    float: left;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.imgg {
+    width: auto;
+    height: auto;
+	max-width: 75vw;
+	max-height: 75vh;
+	margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    float: left;
+}
+
+.imgg2 {
+    z-index: 999;
+}
+
+@keyframes sss {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 20%;
+    }
+}
+@keyframes lineHeight {
+    0% {
+        height: 0%;
+        width: var(--imgWidth);
+		filter: blur(20px);
+    }
+    100% {
+        width: var(--imgWidth);
+        height: var(--imgHeight);
+		filter: blur(0px);
+    }
+}
+@keyframes lineWidth {
+    0% {
+        width: 0px;
+        height: var(--imgHeight);
+		filter: blur(20px);
+    }
+    100% {
+        width: var(--imgWidth);
+        height: var(--imgHeight);
+		filter: blur(0px);
+    }
+}
+
+
+.imgSize {
+    opacity: 0;
+}
+.btnCont {
+	padding: 0;
+	margin: 0;
+}
+
+#prevB, #nextB, #close {
+	display: inline-block;
+	z-index: 9;
+	position: absolute;
+	top: 50%;
+	color: white;
+}
+#prevB {
+	left: 0;
+}
+#nextB {
+	right: 0;
+}
+#close {
+	right: 10px;
+	top: 10px;
+}

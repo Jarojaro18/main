@@ -1,0 +1,136 @@
+:root {
+	
+}
+body {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	
+	font-family: 'Montserrat', sans-serif;
+	
+	
+}
+#rectangle_right {
+	width: 260px;
+	height: 30px;
+	position: absolute;
+	right: 0px;
+	bottom: 150px;
+	transform-origin: 100% 50%;
+	box-sizing: border-box;
+	border: solid 2px black;
+	transform: rotateZ(-40deg);
+	background-color: black;
+}
+#rectangle_left {
+	width: 260px;
+	height: 30px;
+	position: absolute;
+	left: 0px;
+	bottom: 150px;
+	transform-origin: 0% 50%;
+	box-sizing: border-box;
+	border: solid 2px black;
+	transform: rotateZ(40deg);
+	background-color: black;
+}
+.ball {
+	position: absolute;
+	background-color: rgba(255,255,255,0);
+	border-radius: 50%;
+}
+#ball {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 60%;
+	top: 10px;
+	border-radius: 50%;
+	background-color: green;
+}
+#data {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 50px;
+	font-size: 24px;
+}
+
+@keyframes obrot {
+	0% {
+		transform: rotateZ(0deg);
+	}
+	100% {
+		transform: rotateZ(360deg);
+	}
+}
+@keyframes up {
+	0% {
+		transform: rotateZ(-40deg);
+	}
+	100% {
+		transform: rotateZ(30deg);
+	}
+}
+@keyframes down {
+	0% {
+		transform: rotateZ(30deg);
+	}
+	100% {
+		transform: rotateZ(-40deg);
+	}
+}
+#pinball_container {
+	position: absolute;
+	width: 630px;
+	height: 100vh;
+	box-sizing: border-box;
+	border: solid 2px black;
+	left: calc(50% - 300px);
+}
+.trigger {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background-color: red;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-weight: bold;
+}
+.trigger_1 {
+	left: calc(20% - 20px);
+	top: 5%;
+}
+.trigger_2 {
+	left: calc(80% - 20px);
+	top: 5%;
+}
+.trigger_3 {
+	left: calc(50% - 20px);
+	top: 25%;
+}
+.trigger_4 {
+	left: calc(30% - 20px);
+	top: 30%;
+}
+.trigger_5 {
+	left: calc(70% - 20px);
+	top: 30%;
+}
+#points_lives {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+#points, #ball_num {
+	text-align: center;
+	width: 50%;
+	font-size: 24px;
+}

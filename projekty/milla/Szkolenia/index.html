@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--<link rel="stylesheet" type="text/css" href="board">-->
+<!--<script src="boardJs"></script>-->
+<link rel="stylesheet" type="text/css" href="../index.css">
+<link rel="stylesheet" type="text/css" href="../O mnie/photo.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="courses.css">
+
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+ 
+
+<script src="https://kit.fontawesome.com/1d18fffde0.js" crossorigin="anonymous"></script>
+<script src="../func.js"></script>
+<script src="photo.js"></script> 
+<script src="../index.js"></script>
+<script src="index.js"></script>
+<script src="courses.js"></script>
+
+</head>
+<body>
+
+<div id="menuContainer">
+	<div class="menuButton navButton" data-bname="O mnie"><a href="../O mnie/index.html"><i class="fas fa-heart"></i></a></div>
+	<div class="menuButton navButton" data-bname="Szkolenia"><a href="index.html"><i class="fas fa-graduation-cap"></i></a></div>
+	<div class="menuButton navButton" data-bname="Terminarz szkoleń"><i class="fas fa-calendar-check"></i></div>
+	<div class="menuButton navButton" data-bname="Modeling"><i class="fas fa-female"></i></div>
+	<div class="menuButton navButton" data-bname="Studio zabiegowe"><i class="fas fa-door-open"></i></div>
+	<div class="menuButton navButton" data-bname="Kontakt"><i class="fas fa-envelope"></i></div>
+</div>
+<div id="socialMenuContainer">
+	<div class="socialButton navButton" data-bname="Facebook"><i class="fab fa-facebook-f"></i></div>
+	<div class="socialButton navButton" data-bname="Instagram"><i class="fab fa-instagram"></i></div>
+	<div class="socialButton navButton" data-bname="Blog"><i class="fas fa-blog"></i></div>
+	<div class="socialButton navButton" data-bname="Pinterest"><i class="fab fa-pinterest-p"></i></div>
+</div>
+<div id="buttonTitle"></div>
+<div id="courses">
+	<div class="imageContainer">
+		<div class="imageText">
+			<div class="imgTxt1"></div>
+			<div class="imgTxt2">Zapoznaj się z naszą ofertą szkoleń</div>
+		</div>
+	</div>
+	<div class="course_button_container">
+		<div class="course_button" onclick="showCourse('all')">WSZYSTKIE KURSY</div>
+		<div class="course_button" onclick="showCourse('cosmetology')">KOSMETOLOGIA ESTETYCZNA</div>
+		<div class="course_button" onclick="showCourse('tattoo')">TATUAŻ ARTYSTYCZNY</div>
+		<div class="course_button" onclick="showCourse('permament')">MAKIJAŻ PERMAMENTNY</div>
+		<div class="course_button" onclick="showCourse('makeup')">MAKE-UP</div>
+		<div class="course_button">STYLIZACJA RZĘS</div>
+		<div class="course_button">AKADEMIA BIZNESU</div>
+	</div>
+	<div class="courses_container">
+		<div class="course_content" onclick="course_data(course1, 'permament')">
+			<img src="../images/courses/course1.jpg"/>
+			<div class="course_text_content">
+				<div>MAKIJAŻ PERMAMENTNY - POZIOM PODSTAWOWY (3 DNI)</div>
+				<div class="price">3800,00 zł</div>
+			</div>
+		</div>
+		<div class="course_content permament" onclick="course_data(course2, 'brwi')">
+			<img src="../images/courses/course2.jpg"/>
+			<div class="course_text_content">
+				<div>PERFEKCYJNY RYSUNEK BRWI</div>
+				<div class="price">600,00 zł</div>
+			</div>
+		</div>
+		<div class="course_content tattoo" onclick="course_data(course3, 'tattoo')">
+			<img src="../images/courses/course3.jpg"/>
+			<div class="course_text_content">
+				<div>PHOTOSHOP CC - PROJEKTOWANIE DLA TATUAŻYSTÓW</div>
+				<div class="price">2500,00 zł</div>
+			</div>
+		</div>
+		<div class="course_content tattoo" onclick="course_data(course4, 'tattoo')">
+			<img src="../images/courses/course4.jpg"/>
+			<div class="course_text_content">
+				<div>SMALL AESTETHIC TATTOO - DLA LINGERYSTEK I TATUAŻYSTÓW</div>
+				<div class="price">3500,00 zł</div>
+			</div>
+		</div>
+		<div class="course_content tattoo" onclick="course_data(course5, 'tattoo')">
+			<img src="../images/courses/course5.jpg"/>
+			<div class="course_text_content">
+				<div>TATUAŻ - POZIOM PODSTAWOWY (3 DNI)</div>
+				<div class="price">5000,00 zł</div>
+			</div>
+		</div>
+		<div class="course_content tattoo" onclick="course_data(course6, 'tattoo')">
+			<img src="../images/courses/course6.jpg"/>
+			<div class="course_text_content">
+				<div>TATUAŻ - POZIOM PODSTAWOWY PLUS (3 DNI)</div>
+				<div class="price">6500,00 zł</div>
+			</div>
+		</div>
+		<div class="course_content tattoo" onclick="course_data(course7, 'tattoo')">
+			<img src="../images/courses/course7.jpg"/>
+			<div class="course_text_content">
+				<div>TATUAŻ - POZIOM PODSTAWOWY MASTER (4 DNI)</div>
+				<div class="price">8500,00 zł</div>
+			</div>
+		</div>
+		<div class="course_content makeup" onclick="course_data(course8, 'makeup')">
+			<img src="../images/courses/course8.jpg"/>
+			<div class="course_text_content">
+				<div>MASTER MAKE-UP</div>
+				<div class="price">2400,00 zł</div>
+			</div>
+		</div>
+		<div class="course_content makeup" onclick="course_data(course9, 'bridal')">
+			<img src="../images/courses/course9.jpg"/>
+			<div class="course_text_content">
+				<div>EXPERT MAKIJAŻU ŚLUBNEGO</div>
+				<div class="price">1400,00 zł</div>
+			</div>
+		</div>
+		<div class="course_content cosmetology" onclick="course_data(course10, 'pdo')">
+			<img src="../images/courses/course10.jpg"/>
+			<div class="course_text_content">
+				<div>NICI PDO - LIFTING TWARZY I SZYI</div>
+				<div class="price">2200,00 zł</div>
+			</div>
+		</div>
+		<div class="course_content cosmetology" onclick="course_data(course11, 'lips')">
+			<img src="../images/courses/course11.jpg"/>
+			<div class="course_text_content">
+				<div>MODELOWANIE I POWIĘKSZANIE UST - KWAS HIALURONOWY (2 TECHNIKI)</div>
+				<div class="price">2200,00 zł</div>
+			</div>
+		</div>
+		<div class="course_content cosmetology" onclick="course_data(course12, 'lips')">
+			<img src="../images/courses/course12.jpg"/>
+			<div class="course_text_content">
+				<div>MODELOWANIE I POWIĘKSZANIE UST - RUSSIAN LIPS</div>
+				<div class="price">3200,00 zł</div>
+			</div>
+		</div>
+		<div class="course_content cosmetology" onclick="course_data(course13, 'lips')">
+			<img src="../images/courses/course13.jpg"/>
+			<div class="course_text_content">
+				<div>MODELOWANIE I POWIĘKSZANIE UST MASTER - KWAS HIALURONOWY (5 TECHNIK)</div>
+				<div class="price">4400,00 zł</div>
+			</div>
+		</div>
+		<div class="course_content cosmetology" onclick="course_data(course14, 'igla')">
+			<img src="../images/courses/course14.jpg"/>
+			<div class="course_text_content">
+				<div>MEZOTERAPIA IGŁOWA</div>
+				<div class="price">1000,00 zł</div>
+			</div>
+		</div>
+		<div class="course_content permament" onclick="course_data(course18, 'brwi')">
+			<img src="../images/courses/course15.jpg"/>
+			<div class="course_text_content">
+				<div>WARSZTAT MAKIJAŻU PERMAMENTNEGO - WYBRANA TECHNIKA (1 DZIEŃ)</div>
+				<div class="price">2400,00 zł</div>
+			</div>
+		</div>
+		<div class="course_content tattoo" onclick="course_data(course17, 'tattoo')">
+			<img src="../images/courses/course16.jpg"/>
+			<div class="course_text_content">
+				<div>WARSZTAT PRAKTYCZNY DLA ZAAWANSOWANYCH (1 DZIEŃ / 1 MODEL)</div>
+				<div class="price">3500,00 zł</div>
+			</div>
+		</div>
+		<div class="course_content makeup" onclick="course_data(course16, 'makeup')">
+			<img src="../images/courses/course17.jpeg"/>
+			<div class="course_text_content">
+				<div>WARSZTATY TEMATYCZNE Z MAKIJAŻU (1 DZIEŃ)</div>
+				<div class="price">500,00 zł</div>
+			</div>
+		</div>
+	</div>
+	<div id="course_data">
+		<i class="fas fa-times close_course" onclick="close_course()"></i>
+		<div class="course_background">
+			<div class="course_title">
+			</div>
+			
+			<div class="course_price">
+			</div>
+			
+			<div class="course_length">
+				
+			</div>
+		</div>
+		<div class="course_describe">OPIS KURSU:</div>
+		<div class="course_desc">
+		
+		</div>
+		
+		<div class="course_describe">PROGRAM KURSU:</div>
+		<div class="course_program"></div>
+	</div>
+</div>
+
+
+</body>
+</html>

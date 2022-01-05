@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--<link rel="stylesheet" type="text/css" href="board">-->
+<!--<script src="boardJs"></script>-->
+<link rel="stylesheet" type="text/css" href="../index.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="photo.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+
+
+
+<script src="https://kit.fontawesome.com/1d18fffde0.js" crossorigin="anonymous"></script>
+<script src="../func.js"></script> 
+<script src="../index.js"></script>
+<script src="index.js"></script>
+<script src="school.js"></script>
+<script src="photo.js"></script>
+
+</head>
+<body>
+
+<div id="menuContainer">
+	<div class="menuButton navButton" data-bname="O mnie"><a href="index.html"><i class="fas fa-heart"></i></div>
+	<div class="menuButton navButton" data-bname="Szkolenia"><a href="../Szkolenia/index.html"><i class="fas fa-graduation-cap"></i></a></div>
+	<div class="menuButton navButton" data-bname="Terminarz szkoleń"><i class="fas fa-calendar-check"></i></div>
+	<div class="menuButton navButton" data-bname="Modeling"><i class="fas fa-female"></i></div>
+	<div class="menuButton navButton" data-bname="Studio zabiegowe"><i class="fas fa-door-open"></i></div>
+	<div class="menuButton navButton" data-bname="Kontakt"><i class="fas fa-envelope"></i></div>
+</div>
+<div id="socialMenuContainer">
+	<div class="socialButton navButton" data-bname="Facebook"><i class="fab fa-facebook-f"></i></div>
+	<div class="socialButton navButton" data-bname="Instagram"><i class="fab fa-instagram"></i></div>
+	<div class="socialButton navButton" data-bname="Blog"><i class="fas fa-blog"></i></div>
+	<div class="socialButton navButton" data-bname="Pinterest"><i class="fab fa-pinterest-p"></i></div>
+</div>
+<div id="buttonTitle"></div>
+<div id="bg"></div>
+<div class="blur" id="about">
+	<div id="personal_data">
+		<div id="myPhoto">
+			<img src="../images/MW-1.png"/>
+		</div>
+		<div id="myName">
+			mgr. inż. <br>Martyna Wilk
+		</div>
+		<div class="aboutMe">
+			<div class="div_rot_left"></div>
+			współzałożycielka <span class="imp">WOLF Group</span> odpowiada za tę część firmy, która specjalizuje
+			się w zabiegach estetycznych, makijażu permanentnym oraz artystycznym tatuażu.
+			Martyna jest głównym szkoleniowcem w <span class="imp">AKADEMII WOLF Group.</span> Współtworzy także długofalową koncepcję rozwoju firmy oraz dba o jej 
+			wizerunek w mediach społecznościowych.
+		</div>
+	</div>
+	<div id="experience">
+		<div class="div_rot_right"></div>
+		<div class="part_title imp">MOJE DOŚWIADCZENIE</div>
+		
+		<div class="quote">
+			<i>Najważniejszy w każdym działaniu jest początek 
+			<div class="imp right_text">- Platon</div></i>
+		</div>
+		<div class="show">
+			<i class="fas fa-sort-down" onclick="show_text('beginning', txt1)"></i>
+		</div>
+		<div class="beginning part_text">
+		
+		</div>
+		
+		
+		<div class="quote">
+			<i>Sukces jest wynikiem właściwej decyzji
+			<div class="imp right_text">- Eurypides</div></i>
+		</div>
+		<div class="show">
+			<i class="fas fa-sort-down" onclick="show_text('success', txt2)"></i>
+		</div>
+		<div class="success part_text">
+		
+		</div>
+		
+		
+		<div class="quote">
+			<i>Ekspert to taki człowiek, który popełnił wszystkie możliwe błędy w bardzo wąskiej dziedzinie. 
+			<div class="imp right_text">- Niels Bohr</div></i>
+		</div>
+		<div class="show">
+			<i class="fas fa-sort-down" onclick="show_text('expert', txt3)"></i>
+		</div>
+		<div class="expert part_text">
+		
+		</div>
+	</div>
+	
+	<div id="schools">
+		<div class="div_rot_left"></div>
+		<div class="part_title imp">EDUKACJA KIERUNKOWA</div>
+		
+		<div class="knowledge_title">
+			<div class="sc_type_button" data-btntitle="studies">UCZELNIE</div>
+			<div class="sc_type_button" data-btntitle="courses">SZKOŁY</div>
+			<div class="sc_type_button" data-btntitle="diplomas">DYPLOMY</div>
+		</div>
+		<div class="studies schools_part">
+			<div class="school_container school1">
+				<div class="main_school">POLITECHNIKA ŚLĄSKA</div>
+				<div class="sub_school"><i>Inżynieria chemiczna i procesowa (studia w j.angielskim), studia dzienne ukończone tytułem inżyniera chemii (2012)</i></div>
+			</div>
+			<div class="school_container school2">
+				<div class="main_school">WYŻSZA SZKOŁA NAUK SPOŁECZNYCH W LUBLINIE</div>
+				<div class="sub_school"><i>Dietetyka i Planowanie Żywienia, studia podyplomowe (2014)</i></div>
+			</div>
+			<div class="school_container school3">
+				<div class="main_school">GÓRNOŚLĄSKA WYŻSZA SZKOŁA HANDLOWA W KATOWICACH</div>
+				<div class="sub_school"><i>Trener Linergista, studia podyplomowe  nadające uprawnienia trenerskie w branży PMU (2019)</i></div>
+			</div>
+			<div class="school_container school4">
+				<div class="main_school">GÓRNOŚLĄSKA WYŻSZA SZKOŁA HANDLOWA W KATOWICACH</div>
+				<div class="sub_school"><i>Kosmetologia Estetyczna, studia magisterskie ukończone tytułem magistra kosmetologii (2019)</i></div>
+			</div>
+		</div>
+		<div class="courses schools_part">
+			<div class="school_container school5">
+				<div class="main_school">BIAR BEAUTY GROUP AGNIESZKA BRODA</div>
+				<div class="sub_school"><i>Szkoła Makijażu I, II st., Katowice (2014)</i></div>
+			</div>
+			<div class="school_container school6">
+				<div class="main_school">AKADEMIA TATUAŻU ARTYSTYCZNEGO "PAREDO"</div>
+				<div class="sub_school"><i>podstawowy kurs zawodowy z tatuażu, Kraków (2015)</i></div>
+			</div>
+			<div class="school_container school7">
+				<div class="main_school">BROADWAY BEAUTY</div>
+				<div class="sub_school"><i>Permanent Master School, Katowice (2016)</i></div>
+			</div>
+			<div class="school_container school8">
+				<div class="main_school">SZKOŁA TATUAŻU ARTYSTYCZNEGO "PONTON TATTOO SCHOOL"</div>
+				<div class="sub_school"><i>kurs dla zaawansowanych, Swarzędź (2019)</i></div>
+			</div>
+		</div>
+		<div class="diplomas schools_part">
+			<div id="certificateContainer"></div>
+		</div>
+	</div>
+
+	<div id="events">
+		<div class="div_rot_right"></div>
+		<div class="part_title imp">WYDARZENIA</div>
+		<div class="event_buttons_container">
+			<div class="golec event_button" onclick="showImages(golec)">
+				Praca przy jednym z teledysków Golec uOrkiestra (kompletna usługa wizażu dla członków zespołu)
+			</div>
+			<div class="dancing event_button" onclick="showImages(dancing)">
+				Wizaż Dawida Kwiatkowskiego w Dancing with The Stars (TV POLSAT)
+			</div>
+			<div class="sold event_button" onclick="showImages(sold)">
+				Obsługa od strony wizażu członków zespołu Sold My Soul (nagranie teledysku Teraz albo nigdy) 
+			</div>
+			<div class="canoe event_button" onclick="showImages(canoe)">
+				Kreowanie wizerunku blogerki – Green Canoe (przy produkcji dwóch materiałów filmowych)
+			</div>
+			<div class="voice event_button" onclick="showImages(voice)">
+				Wizaż Łukasza Łyczkowskiego przy nagraniach do teledysku (finalista programu muzycznego The Voice Of Poland)
+			</div>
+			<div class="fedro event_button" onclick="showImages(fedro)">
+				Praca przy sesji zdjęciowej dla ATELIER Maria Fedro
+			</div>
+		</div>
+	</div>
+	
+	<div id="imgContainer">
+		<div id="imgContent">
+			<img src="" class="imgg imgSize">
+			<div class="tile"><img src="" class="imgg imgg2"></div>
+			<div class="tile"><img src="" class="imgg imgg2"></div>
+			<div class="tile"><img src="" class="imgg imgg2"></div>
+			<div class="tile"><img src="" class="imgg imgg2"></div>
+			<div class="tile"><img src="" class="imgg imgg2"></div>
+			<div class="tile"><img src="" class="imgg imgg2"></div>
+			<div class="tile"><img src="" class="imgg imgg2"></div>
+			<div class="tile"><img src="" class="imgg imgg2"></div>
+			<div class="tile"><img src="" class="imgg imgg2"></div>
+			<div class="tile"><img src="" class="imgg imgg2"></div>
+			<div class="tile"><img src="" class="imgg imgg2"></div>
+			<div class="tile"><img src="" class="imgg imgg2"></div>
+			<div class="tile"><img src="" class="imgg imgg2"></div>
+			<div class="tile"><img src="" class="imgg imgg2"></div>
+			<div class="tile"><img src="" class="imgg imgg2"></div>
+			<div class="tile"><img src="" class="imgg imgg2"></div>
+			<div class="tile"><img src="" class="imgg imgg2"></div>
+			<div class="tile"><img src="" class="imgg imgg2"></div>
+			<div class="tile"><img src="" class="imgg imgg2"></div>
+			<div class="tile"><img src="" class="imgg imgg2"></div>
+		</div>
+		<div class="btnContainer2">
+			<div id="prevB" onclick="prev_photo()">PREV</div>
+			<div id="nextB" onclick="next_photo()">NEXT</div>
+			<div id="close" onclick="close_gallery()">X</div>
+		</div>
+	</div>
+	
+	
+</div>
+
+</body>
+</html>

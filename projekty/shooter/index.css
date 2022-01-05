@@ -1,0 +1,363 @@
+:root {
+	
+}
+body {
+	width: 100%;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	font-family: 'Rock 3D', cursive;
+	overflow : hidden;
+}
+#title, #buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: rgb(138, 255, 99);
+	text-shadow: 2px 2px 2px white;
+	width: 100%;
+}
+#title {
+	font-size: calc(24px + 2vw);
+	height: 30vh;
+}
+#buttons {
+	font-size: calc(16px + 1vw);
+	height: 70vh;
+	flex-wrap: wrap;
+}
+.button {
+	width: 100%;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+}
+.button span:hover {
+	color: red;
+}
+
+#alien_ship {
+	position: absolute;
+	width: 120px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: lightgray;
+	left: 0;
+	top: 0;
+}
+.cockpit {
+	width: 60px;
+	height: 20px;
+	background-color: rgb(116, 232, 215);
+	border-radius: 50%;
+	position: absolute;
+	left: calc(50% - 30px);
+	top: -10px;
+	z-index: -1;
+}
+.light_circle {
+	width: 40px;
+	height: 20px;
+	position: absolute;
+	left: calc(50% - 20px);
+	top: calc(50% - 10px);
+	background-color: red;
+	border-radius: 50%;
+}
+.light_ray {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	left: calc(50% - 75px);
+	top: 80%;
+	transform-origin: 50% 50%;
+	transform: rotateZ(45deg);
+	z-index: -1;
+}
+.control_desc, .ship_choose, .rules_desc, .achievements_desc {
+	width: 80vw;
+	height: 80vh;
+	background-color: black;
+	border-radius: 10px;
+	border: solid 2px white;
+	position: absolute;
+	left: calc(50% - 40vw);
+	top: calc(50% - 40vh);
+	display: none;
+	justify-content: center;
+	flex-wrap: wrap;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	align-items: center;
+}
+.close {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	color: white;
+	font-size: 24px;
+	cursor: pointer;
+	z-index: 2;
+}
+.control_mouse, .control_keyboard {
+	width: 500px;
+	max-width: 48%;
+	font-size: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-shadow: 0px 0px 4px white;
+}
+
+.control_text, .rules_text {
+	font-size: 24px;
+	color: white;
+	text-shadow: none;
+}
+.ship_choose {
+	display: none;
+}
+.ship_choice {
+	width: 400px;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	position: relative;
+}
+.ship_container {
+	width: 400px;
+	height: 200px;
+    background-color: black;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+}
+.ship_container:hover {
+	box-sizing: border-box;
+	border: solid 2px lightgreen;
+	border-radius: 10px;
+}
+.ship_layer2 {
+	width: 200px;
+	height: 200px;
+    background-color: black;
+	position: absolute;
+}
+.ship_statistics {
+	color: white;
+	font-size: 24px;
+}
+.ship_statistics div {
+	margin-top: 20px;
+}
+.ship_stat {
+	margin-left: 20px;
+}
+#gameboard {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+	background-color: black;
+	display: none;
+}
+
+#ship_points {
+    width: 620px;
+    height: 50px;
+    position: absolute;
+    left: calc(50% - 300px);
+    top: calc(100vh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	user-select: none;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+}
+#ship_points div {
+	margin: 5px;
+}
+#ship_points i {
+	margin-right: 5px;
+}
+#hp {
+	color: rgb(230, 34, 93);
+}
+#shield {
+	color: rgb(95, 250, 237);
+}
+#damage {
+	color: rgb(161, 3, 19);
+}
+#healing {
+	color: rgb(87, 242, 95);
+}
+#bonuses {
+	position: absolute;
+	z-index: 10;
+	width: 80%;
+	height: 80vh;
+	left: 10%;
+	top: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: black;
+	display: none;
+	font-family: 'Montserrat', sans-serif;
+}
+.add_stat {
+	width: 150px;
+	height: 150px;
+	font-size: 32px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.add_stat:hover {
+	box-sizing: border-box;
+	border-radius: 10px;
+	border: solid 2px white;
+}
+.achievements_desc {
+	overflow-y: auto;
+}
+#kills_achievements, #hp_achievements, #heal_achievements, #damage_achievements {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.kill_achievement, .hp_achievement, .heal_achievement, .damage_achievement {
+	width: 200px;
+	min-width: 200px;
+	height: 150px;
+	background-color: red;
+	color: white;
+	font-size: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	margin: 10px;
+	filter: grayscale(100%);
+	flex-wrap: wrap;
+	border-radius: 10px;
+}
+#res {
+	width: 100%;
+	height: 50px;
+	color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	font-size: 40px;
+	font-family: 'Montserrat', sans-serif;
+}
+.achievement_background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+}
+.achievement_title {
+	color: black;
+	text-shadow: 1px -1px 3px red, -1px 1px 3px white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: auto;
+	font-size: 24px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-family: 'Pushster', cursive;
+}
+.first_blood {
+	background-image: url(images/blood.jpg);
+}
+.decimation {
+	background-image: url(images/decimation.jpeg);
+}
+.alien_killer {
+	background-image: url(images/alien.jpg);
+}
+.balance {
+	background-image: url(images/balance.jpg);
+}
+.sparta {
+	background-image: url(images/sparta.jpg);
+}
+.hecatomb {
+	background-image: url(images/hecatomb.jpg);
+}
+.planet {
+	background-image: url(images/planet.jpg);
+}
+.masakra {
+	background-image: url(images/masakra.jpg);
+}
+.hou {
+	background-image: url(images/heart.jpg);
+}
+.divine {
+	background-image: url(images/divine_healing.jpg);
+}
+.saint {
+	background-image: url(images/saint_healing.jpg);
+}
+.pills {
+	background-image: url(images/pills.jpg);
+}
+.vaccine {
+	background-image: url(images/vaccine.jpg);
+}
+.fast_healing {
+	background-image: url(images/fast_healing.png);
+}
+.nuclear {
+	background-image: url(images/nuclear.jpg);
+}
+.prehistoric {
+	background-image: url(images/prehistoric.jpg);
+}
+.missile {
+	background-image: url(images/missile.jpg);
+}
+.bomb {
+	background-image: url(images/bomb.jpeg);
+}
+.knight {
+	background-image: url(images/knight.jpg);
+}
+.oak {
+	background-image: url(images/oak.jpg);
+}
+.mountain {
+	background-image: url(images/mountain.jpg);
+}
+.earth {
+	background-image: url(images/earth.jpg);
+}
+.galaxy {
+	background-image: url(images/galaxy.jpg);
+}

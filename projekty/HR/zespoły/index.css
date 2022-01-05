@@ -1,0 +1,61 @@
+#bandDesc {
+    text-align: center;
+    width: 100%;
+}
+.description {
+	font-size: 24px;
+	padding-top: 100px;
+}
+#optionContainer {
+	position: relative;
+}
+.bandOpt {
+	padding: 2px 10px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 5px;
+}
+.bandOpt:hover {
+	text-decoration: underline;
+    text-shadow: 0px 0px 1px white;
+    cursor: pointer;
+}
+.optDiv {
+	margin-top: 10px;
+}
+#songTitle input {
+	border-radius: 10px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+	width: 200px;
+}
+#bands {
+	margin-top: 20px;
+}
+.bandSign {
+	display: inline-block;
+    width: 200px;
+    height: 150px;
+    max-width: 15%;
+    max-height: auto;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+
+	margin: 5px 20px;
+}
+.bandSign:hover {
+	box-sizing: border-box;
+	border-bottom: 4px solid white;
+	border-top: 4px solid white;
+}
+#all {
+	font-size: 24px;
+}
+.gText {
+	color: green;
+}

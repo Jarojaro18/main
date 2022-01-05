@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8">
+<!--<link rel="stylesheet" type="text/css" href="board">-->
+<!--<script src="boardJs"></script>-->
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/1d18fffde0.js" crossorigin="anonymous"></script>
+<script src="func.js"></script> 
+<script src="index.js"></script>
+<script src="cookie.js"></script>
+</head>
+<body>
+<div id="level_container">
+	<div class="title">".. jak saper raz się myli"</div>
+	<div class="levels">
+		<div>WYBIERZ POZIOM</div>
+		<div class="level" onclick="set_level(10, arr10)">10x10</div>
+		<div class="level" onclick="set_level(12, arr12)">12x12</div>
+		<div class="level" onclick="set_level(15, arr15)">15x15</div>
+	</div>
+	<div id="background">
+		
+	</div>
+</div>
+
+
+
+<div id="gameboard_container">
+	<div id="gameboard"></div>
+</div>
+<i class="fas fa-award score" ></i>
+<div id="scoreboard">
+<i class="fas fa-times-circle exit"></i>
+	<div class="lvl">
+		<div>10 x 10</div>
+		<div class="r10 rr"></div>
+	</div>
+	<div class="lvl">
+		<div>12 x 12</div>
+		<div class="r12 rr"></div>
+	</div>
+	<div class="lvl">
+		<div>15 x 15</div>
+		<div class="r15 rr"></div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,168 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	color: white;
+}
+.player_container {
+	position: fixed;
+    top: 0;
+	width: 100%;
+	height: auto;
+	max-height: 90%;
+    max-width: 100%;
+	margin: 0;
+	padding: 20px 0px;
+	color: white;
+	font-family: 'Zen Dots', cursive;
+	display: none;
+	background-color: black;
+	overflow-x: hidden;
+    border-top: 2px white solid;
+	z-index: 1100;
+}
+
+.disc_image {
+	padding: 10px 0px;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+}
+.disc_image img {
+	width: auto;
+	height: auto;
+    max-height: 200px;
+}
+.s_p_container {
+    display: flex;
+	justify-content: center;
+    flex-wrap: wrap;
+}
+.song_name_container, .player_btn_container {
+    height: 50px;
+    margin: 5px 20px;
+    padding: 0px 40px;
+}
+.song_name_container {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	flex-wrap: wrap;
+	font-size: 14px;
+	text-shadow: 0px 0px 5px red;
+    width: auto;
+}
+.song_name {
+	margin: 0px 5px;
+}
+.close_player {
+	font-size: 24px;
+}
+
+.player_btn_container {
+	width: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.player_btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5px 0px;
+	width: 200px;
+	height: auto;
+	color: rgb(200,200,200);
+	font-size: 20px;
+}
+.player_btn i {
+	cursor: pointer;
+	padding: 0px 10px;
+	color: rgba(200,200,200, 0.3);
+}
+.playlist_btn {
+    font-size: 24px;
+}
+.player_btn i:hover {
+	color: rgba(200,200,200, 1);
+	text-shadow: 0px 0px 5px red;
+}
+.next_song {
+
+}
+.prev_song {
+
+}
+.forward {
+
+}
+.backward {
+
+}
+.pause {
+	display: none;
+}
+.song_length {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5px 0px;
+}
+.song_timeline {
+	height: 6px;
+	width: 60%;
+	background-color: rgba(220, 220, 220, 0.3);
+	border-radius: 5px;
+	margin: 0px 8px;
+}
+.start, .stop {
+	font-size: 10px;
+	text-align: center;
+}
+.start, .stop, .song_timeline {
+	display: inline-block;
+}
+.current_time {
+	display: flex;
+	font-size: 16px;
+	justify-content: center;
+	width: 100%;
+}
+.song_lyrics {
+	width: 100%;
+	min-height: 50px;
+    height: auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 24px;
+}
+.singers {
+	width: 100%;
+	height: 100px;
+}
+.playlist {
+	height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+	overflow: auto;
+	box-shadow: 0px 0px 5px white;
+}
+.playlist_song {
+	height: 20px;
+	font-size: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px 10px;
+	cursor: pointer;
+	color: white;
+}
+.playlist_song:hover {
+	text-shadow: 1px 1px 4px red;
+}

@@ -1,0 +1,116 @@
+:ROOT {
+	--top_position_enemy_bullet;
+	--left_position_enemy_bullet;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+#game_board {
+	width: 100%;
+	height: 100vh;
+	background-color: black;
+	perspective: 400px;
+}
+
+#ship {	
+	width: 80px;
+	height: 80px;
+	background-image: linear-gradient(to right, rgb(25,25,25) 0%, rgb(150,150,150) 40%,rgb(150,150,150) 60%, rgb(25,25,25) 100%);
+	clip-path: polygon(50% 0%, 45% 10%, 45% 20%, 15% 70%, 30% 90%, 50% 80%, 70% 90%, 85% 70%, 55% 20%, 55% 10%);
+	position: fixed;
+	left: calc(50% - 20px);
+	bottom: 10px;
+	transform-style: preserve-3d;
+}
+.gun {
+	position: absolute;
+	width: 8px;
+	height: 10px;
+	top: -8px;
+	left: calc(50% - 4px);
+	background-color: blue;
+}
+#cockpit {
+	position: absolute;
+	left: 46%;
+	top: 8%;
+	width: 8%;
+	height: 12%;
+	background-color: rgb(48, 176, 99);
+	z-index: 1;
+	clip-path: polygon(50% 0%, 0% 50%, 50% 100%, 100% 50%);
+}
+#enemyContainer {
+	width: 80%;
+	height: 30vh;
+	position: absolute;
+	top: 0;
+	left: 10%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.enemyShip {
+	width:80px;
+	height: 80px;
+	box-sizing: border-box;
+	border: solid 2px red;
+	margin: 5px 10px;
+	visibility: hidden;
+	display: inline-block;
+	background-image: linear-gradient(to right, rgb(25,25,25) 0%, rgb(150,150,150) 40%,rgb(150,150,150) 60%, rgb(25,25,25) 100%);
+	clip-path: polygon(25% 10%, 10% 40%, 10% 50%, 25% 80%, 30% 80%, 30% 70%, 20% 50%, 40% 60%, 50% 70%, 60% 60%, 80% 50%, 70% 70%, 70% 80%, 75% 80%, 90% 50%, 90% 40%, 75% 10%, 70% 10%, 70% 20%, 80% 40%, 60% 30%, 40% 30%, 20% 40%, 30% 20%, 30% 10%);
+	position: relative;
+}
+.cockpit {
+	position: absolute;
+	left: 40%;
+	top: 35%;
+	width: 20%;
+	height: 30%;
+	background-color: red;
+	z-index: 1;
+	clip-path: polygon(50% 0%, 0% 40%, 50% 100%, 100% 40%);
+}
+.visible {
+	visibility: visible;
+}
+
+#scoreboard_container {
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: flex;
+	z-index: 2;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+#scoreboard {
+	text-align: center;
+	width: 75%;
+	height: 40%;
+	display: flex;
+	flex-wrap: wrap;
+	font-size: calc(24px + 1vw);
+	color: white;
+}
+.lvl, .points, .lives {
+	width: 100%;
+	height: auto;
+	color: white;
+}
+@keyframes enemy_bullet {
+	0% {
+		left: var(--left_position_enemy_bullet);
+		top: var(--top_position_enemy_bullet);
+	}
+	100% {
+		left: var(--left_position_enemy_bullet);
+		top: 100%;
+	}
+}

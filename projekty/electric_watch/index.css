@@ -1,0 +1,88 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+}
+
+#first_digit {
+	
+}
+#electronical_clock {
+	position: fixed;
+	left: 0;
+	top: 0;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.clock_digit {
+	position: relative;
+	margin: 0px 2%;
+}
+
+.top_hor_line {
+	top: -5%;
+}
+.mid_hor_line {
+
+	top: 45%;
+}
+.bottom_hor_line {
+	top: 95%;
+}
+.hor_line {
+	background-color: pink;
+	width: 100%;
+	height: 10%;
+	position: absolute;
+	left: 0;
+	clip-path: polygon(10% 0%, 0% 50%, 10% 100%, 90% 100%, 100% 50%, 90% 0%, 10% 0%);
+	background-image: radial-gradient(rgb(255,255,255) 0%, rgb(7, 245, 205) 100%);
+}
+.ver_line {
+	background-image: radial-gradient(rgb(255,255,255) 0%, rgb(7, 245, 205) 100%);
+	width: 20%;
+	height: 50%;
+	position: absolute;
+	clip-path: polygon(50% 0%, 0% 10%, 0% 90%, 50% 100%, 100% 90%, 100% 10%, 50% 0%);
+}
+
+.left_top_ver_line {
+	left: -10%;
+	top: 0;
+}
+.left_bottom_ver_line {
+	left: -10%;
+	top: 50%;
+}
+.right_top_ver_line {
+	left: 90%;
+	top: 0;
+}
+.right_bottom_ver_line {
+	left: 90%;
+	top: 50%;
+}
+#clock_dots {
+	width: 10vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.dot {
+	width: 100%;
+	height: 10%;
+	display: flex;
+	justify-content: center;
+}
+.dot_cont {
+	width: 20%;
+	height: 100%;
+	background-image: radial-gradient(rgb(255,255,255) 0%, rgb(7, 245, 205) 100%);
+}

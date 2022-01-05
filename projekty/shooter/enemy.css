@@ -1,0 +1,70 @@
+:root {
+	--left_0;
+	--top_0;
+	--left_1;
+	--top_1;
+	--left_2;
+	--top_2;
+	--left_3;
+	--top_3;
+	--left_4;
+	--top_4;
+	
+}
+
+.enemy {
+	width: 50px;
+	height: 50px;
+	background-color: red;
+	position: absolute;
+    clip-path: polygon(50% 1%, 1% 50%, 50% 99%, 99% 50%);
+	user-select: none;
+}
+.enemy_layer {
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    clip-path: polygon(50% 10%, 30% 50%, 50% 90%, 70% 50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	font-weight: bold;
+	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+@keyframes enemy_move {
+	0% {
+		left: var(--left_0);
+		top: var(--top_0);
+	}
+	20% {
+		left: var(--left_1);
+		top: var(--top_1);
+	}
+	40% {
+		left: var(--left_2);
+		top: var(--top_2);
+	}
+	60% {
+		left: var(--left_3);
+		top: var(--top_3);
+	}
+	80% {
+		left: var(--left_4);
+		top: var(--top_4);
+	}
+	100% {
+		left: var(--left_0);
+		top: var(--top_0);
+	}
+}
+.enemy_bullet {
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: red;
+	user-select: none;
+}

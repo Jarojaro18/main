@@ -1,0 +1,24 @@
+.date, .time, .event_description {
+	text-align: center;
+	
+}
+.date {
+	font-size: 24px;
+}
+.time {
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+.date, .time {
+	font-family: 'Cinzel', serif;
+}
+.event_description {
+	font-size: 18px;
+}
+
+.delete {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	z-index: 20;
+}

@@ -1,0 +1,167 @@
+.band_opt_container {
+	position: relative;
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 100px;
+}
+.band_opt {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	max-width: 20vw;
+	max-height: 20vw;
+	border-radius: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	box-shadow: -1px -1px 2px var(--pink), 1px 1px 2px black;
+	margin: 0px 5px;
+	cursor: pointer;
+}
+.band_opt_background {
+	border-radius: 50%;
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to left, var(--pink) 0%, black 100%);
+}
+.band_opt:hover {
+	box-sizing: border-box;
+	border: solid 2px white;
+	box-shadow: 0px 0px 10px white;
+}
+.reverse_background {
+	background-image: linear-gradient(to right, var(--pink) 0%, black 100%);
+}
+.jisoo {
+	background-image: url('../images/jisoo_face.jpg');
+}
+.lisa {
+	background-image: url('../images/lisa_face.jpg');
+}
+.rosie {
+	background-image: url('../images/rosie_face.jpg');
+}
+.jennie {
+	background-image: url('../images/jennie_face.jpg');
+}
+
+#band_singer_data_container {
+	width: 100%;
+	min-height: 600px;
+	display: flex;
+	align-items: stretch;
+	padding: 0;
+	margin: 0;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+.left_col, .right_col {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.right_col div {
+	width: 100%;
+	text-align: center;
+}
+.left_col {
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.right_col {
+	font-family: 'Teko', sans-serif;
+	color: white;
+}
+
+#singer_name {
+	
+	text-shadow: 1px 1px 5px var(--pink), -1px -1px 5px black;
+	font-size: calc(32px + 2vw);
+	
+}
+#birth_date, #weight, #height, #zodiac, #nationality, #position, #instagram {
+	font-size: calc(21px + 1vw);
+	color: black;
+	font-weight: bold;
+	text-shadow: 1px 1px 5px var(--pink), -1px -1px 5px black;
+}
+
+.data {
+	font-family: 'Teko', sans-serif;
+	color: white;
+	text-shadow: 1px 1px 5px var(--pink), -1px -1px 5px black;
+}
+#instagram {
+	color: white;
+}
+#photogallery {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+.photo_min {
+	width: 150px;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+}
+.photo_min img {
+	max-width: 100%;
+	max-height: 100%;
+	width: auto;
+	height: auto;
+	cursor: pointer;
+}
+.photo_min img:hover {
+	box-shadow:  0px 0px 10px var(--pink);
+}
+#photo_max_container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	z-index: 1000;
+}
+.photo_max {
+	max-width: 80%;
+	max-height: 80%;
+	width: auto;
+	height: auto;
+}
+.close_gallery {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	color: white;
+	font-size: 24px;
+}
+.prev_photo, .next_photo {
+	position: absolute;
+	font-size: 32px;
+	top: calc(50% - 16px);
+	color: white;
+	z-index: 1001;
+}
+.prev_photo {
+	left: 5px;
+}
+.next_photo {
+	right: 5px;
+}

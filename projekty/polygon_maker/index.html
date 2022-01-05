@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--<link rel="stylesheet" type="text/css" href="board">-->
+<!--<script src="boardJs"></script>-->
+<link rel="stylesheet" type="text/css" href="index.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Kanit:ital,wght@1,300&display=swap" rel="stylesheet"> 
+
+<script src="https://kit.fontawesome.com/1d18fffde0.js" crossorigin="anonymous"></script>
+<script src="func.js"></script> 
+<script src="index.js"></script>
+</head>
+<body>
+<div id="set_size">
+	<div class="dimension">
+		Długość: 
+		<input type="text" id="pol_width" name="pol_width">
+		Wysokość: 
+		<input type="text" id="pol_height" name="pol_height">
+		<div class="submit" onclick="set_size()">Zmień rozmiar</div>
+		<div class="percentage"></div>
+	</div>
+</div>
+<div id="polygon_maker_container">
+	<div id="polygon_maker">
+		<div class="polygon"></div>
+	</div>
+</div>
+<div id="clip_path"></div>
+<div class="layers_container">
+	<div class="layers">
+		<div class="layer">Warstwa_0</div>
+	</div>
+	<div id="add_layer" onclick="add_layer()">Dodaj warstwę</div>
+	<div id="remove_layer" onclick="remove_layer()">Usuń warstwę</div>
+</div>
+</body>
+</html>

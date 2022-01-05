@@ -1,0 +1,18 @@
+#menu_box {
+	font-family: 'Grechen Fuemen', cursive;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 10;
+	display: none;
+}
+.menu_button {
+	width: 100%;
+	text-align: center;
+	font-size: calc(18px + 1.5vw);
+	color: white;
+	text-shadow: -2px -2px 10px rgb(31, 237, 210), 2px 2px 10px rgb(255, 25, 255);
+	opacity: 0;
+}
